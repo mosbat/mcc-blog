@@ -84,9 +84,14 @@ pageRef = "case-studies"
 weight = 30
 
 [[main]]
-name = "Back to Company Site"
+name = "Company Site"
 url = "https://www.mousa-cloud.com"
 weight = 35
+
+[[main]]
+name = "Newsletter"
+url = "https://newsletter.mousa-cloud.com"
+weight = 37
 
 [[main]]
 name = "About Me"
@@ -109,9 +114,14 @@ pageRef = "case-studies"
 weight = 30
 
 [[footer]]
-name = "Back to Company Site"
+name = "Company Site"
 url = "https://www.mousa-cloud.com"
 weight = 35
+
+[[footer]]
+name = "Newsletter"
+url = "https://newsletter.mousa-cloud.com"
+weight = 37
 
 [[footer]]
 name = "About Me"

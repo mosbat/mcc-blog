@@ -1,6 +1,7 @@
 disabled = false
 locale = "en"
 label = "English"
+languageName = "English"
 weight = 1
 title = "Blowfish"
 

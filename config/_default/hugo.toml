@@ -3,8 +3,14 @@
 # https://blowfish.page/docs/getting-started/
 
 theme = "blowfish" # UNCOMMENT THIS LINE
-# baseURL = "https://your_domain.com/"
+
+baseURL = "https://mosbat.github.io/mcc-blog/"
+
+title = "MCC Blog"
+
 defaultContentLanguage = "en"
+
+locale = "en-US"
 
 # pluralizeListTitles = "true" # hugo function useful for non-english languages, find out more in  https://gohugo.io/getting-started/configuration/#pluralizelisttitles
 

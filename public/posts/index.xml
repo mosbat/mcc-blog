@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Blowfish</title>
-    <link>//localhost:1313/posts/</link>
-    <description>Recent content in Posts on Blowfish</description>
+    <title>Posts on Mousa Cloud Consulting Blog</title>
+    <link>http://localhost:1313/mcc-blog/posts/</link>
+    <description>Recent content in Posts on Mousa Cloud Consulting Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <copyright>© 2026 </copyright>
-    <lastBuildDate>Sat, 30 May 2026 00:00:00 +0000</lastBuildDate><atom:link href="//localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>© 2026 Mousa Cloud Consulting</copyright>
+    <lastBuildDate>Sat, 30 May 2026 05:58:00 +0200</lastBuildDate><atom:link href="http://localhost:1313/mcc-blog/posts/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Welcome</title>
-      <link>//localhost:1313/posts/my-first-post/</link>
-      <pubDate>Sat, 30 May 2026 00:00:00 +0000</pubDate>
+      <title>Placeholder News Post Title</title>
+      <link>http://localhost:1313/mcc-blog/posts/blogcreated/</link>
+      <pubDate>Sat, 30 May 2026 05:58:00 +0200</pubDate>
       
-      <guid>//localhost:1313/posts/my-first-post/</guid>
+      <guid>http://localhost:1313/mcc-blog/posts/blogcreated/</guid>
       <description></description>
       
     </item>

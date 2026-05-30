@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Aws on Mousa Cloud Consulting Blog</title>
+    <link>http://localhost:1313/mcc-blog/tags/aws/</link>
+    <description>Recent content in Aws on Mousa Cloud Consulting Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>© 2026 Mousa Cloud Consulting</copyright>
+    <lastBuildDate>Fri, 15 May 2026 05:27:00 +0200</lastBuildDate><atom:link href="http://localhost:1313/mcc-blog/tags/aws/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>S3 Misconfiguration Still Top Risk in 2026: Case Study and Fixes for SaaS Providers</title>
+      <link>http://localhost:1313/mcc-blog/case-studies/s3-case-study/</link>
+      <pubDate>Fri, 15 May 2026 05:27:00 +0200</pubDate>
+      
+      <guid>http://localhost:1313/mcc-blog/case-studies/s3-case-study/</guid>
+      <description>A hypothetical AWS case study on S3 public exposure, EU data residency gaps, and a phased remediation approach using presigned URLs, regional buckets, replication, versioning, and object lock.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/mcc-blog/case-studies/s3-case-study/featured.png" />
+    </item>
+    
+  </channel>
+</rss>

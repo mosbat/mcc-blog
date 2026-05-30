@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Security-Architecture on Mousa Cloud Consulting Blog</title>
+    <link>http://localhost:1313/mcc-blog/tags/security-architecture/</link>
+    <description>Recent content in Security-Architecture on Mousa Cloud Consulting Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>© 2026 Mousa Cloud Consulting</copyright>
+    <lastBuildDate>Mon, 11 May 2026 04:58:00 +0200</lastBuildDate><atom:link href="http://localhost:1313/mcc-blog/tags/security-architecture/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>How Tokenization Reduces Merchants&#39; PCI Scope</title>
+      <link>http://localhost:1313/mcc-blog/case-studies/pci-tokenization/</link>
+      <pubDate>Mon, 11 May 2026 04:58:00 +0200</pubDate>
+      
+      <guid>http://localhost:1313/mcc-blog/case-studies/pci-tokenization/</guid>
+      <description>A practical explanation of how tokenization reduces merchants’ PCI scope by limiting cardholder data exposure and shifting sensitive payment handling away from merchant systems.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/mcc-blog/case-studies/pci-tokenization/featured.png" />
+    </item>
+    
+  </channel>
+</rss>

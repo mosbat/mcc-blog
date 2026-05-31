@@ -6,27 +6,17 @@
     <description>Recent content in Security-Architecture on Mousa Cloud Consulting Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <copyright>© 2026 Mousa Cloud Consulting</copyright>
-    <lastBuildDate>Fri, 15 May 2026 05:27:00 +0200</lastBuildDate><atom:link href="http://localhost:1313/mcc-blog/categories/security-architecture/index.xml" rel="self" type="application/rss+xml" />
-    
-    <item>
-      <title>S3 Misconfiguration Still Top Risk in 2026: Case Study and Fixes for SaaS Providers</title>
-      <link>http://localhost:1313/mcc-blog/case-studies/s3-case-study/</link>
-      <pubDate>Fri, 15 May 2026 05:27:00 +0200</pubDate>
-      
-      <guid>http://localhost:1313/mcc-blog/case-studies/s3-case-study/</guid>
-      <description>A hypothetical AWS case study on S3 public exposure, EU data residency gaps, and a phased remediation approach using presigned URLs, regional buckets, replication, versioning, and object lock.</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/mcc-blog/case-studies/s3-case-study/featured.png" />
-    </item>
+    <copyright>© 2026 Mousa Al Bateh</copyright>
+    <lastBuildDate>Mon, 11 May 2026 21:18:00 +0200</lastBuildDate><atom:link href="http://localhost:1313/mcc-blog/categories/security-architecture/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>How Tokenization Reduces Merchants&#39; PCI Scope</title>
-      <link>http://localhost:1313/mcc-blog/case-studies/pci-tokenization/</link>
-      <pubDate>Mon, 11 May 2026 04:58:00 +0200</pubDate>
+      <link>http://localhost:1313/mcc-blog/case-studies/how-tokenization-reduces-merchants-pci-scope/</link>
+      <pubDate>Mon, 11 May 2026 21:18:00 +0200</pubDate>
       
-      <guid>http://localhost:1313/mcc-blog/case-studies/pci-tokenization/</guid>
+      <guid>http://localhost:1313/mcc-blog/case-studies/how-tokenization-reduces-merchants-pci-scope/</guid>
       <description>A practical explanation of how tokenization reduces merchants’ PCI scope by limiting cardholder data exposure and shifting sensitive payment handling away from merchant systems.</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/mcc-blog/case-studies/pci-tokenization/featured.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/mcc-blog/case-studies/how-tokenization-reduces-merchants-pci-scope/featured.png" />
     </item>
     
   </channel>

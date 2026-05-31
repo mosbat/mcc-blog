@@ -15,16 +15,17 @@ title = "Mousa Cloud Consulting Blog"
   # description = "My awesome website"
   # copyright = "Copy, _right?_ :thinking_face:"
 
-# [params.author]
-#   name = "Your name here"
+[params.author]
+name = "Mousa Al Bateh"
 #   email = "youremail@example.com"
-#   image = "img/blowfish_logo.png"
-#   imageQuality = 96
-#   headline = "I'm only human"
-#   bio = "A little bit about you"
-#   links = [
+company = "Mousa Cloud Consulting Ltd"
+image = "images/profile-pic.jpg"
+imageQuality = 96
+headline = "CCSP | AWS Solutions Architect | Cloud Security Consultant"
+bio = "I help SaaS teams strengthen AWS security, improve audit readiness, and reduce cloud risk without slowing delivery."
+links = [
 #     { email = "mailto:hello@your_domain.com" },
-#     { link = "https://link-to-some-website.com/" },
+     { link = "https://www.mousa-cloud.com/" },
 #     { amazon = "https://www.amazon.com/hz/wishlist/ls/wishlist-id" },
 #     { apple = "https://www.apple.com" },
 #     { blogger = "https://username.blogspot.com/" },
@@ -66,7 +67,7 @@ title = "Mousa Cloud Consulting Blog"
 #     { strava = "https://www.strava.com/athletes/username" },
 #     { telegram = "https://t.me/username" },
 #     { threads = "https://www.threads.net/@username" },
-#     { tiktok = "https://tiktok.com/@username" },
+     { tiktok = "https://www.tiktok.com/@strange.developer" },
 #     { tumblr = "https://username.tumblr.com" },
 #     { twitch = "https://twitch.tv/username" },
 #     { untappd = "https://untappd.com/user/username" },
@@ -77,4 +78,4 @@ title = "Mousa Cloud Consulting Blog"
 #     { ko-fi = "https://ko-fi.com/username" },
 #     { codeberg = "https://codeberg.org/username"},
 #     { printables = "https://www.printables.com/@username"},
-#   ]
+   ]

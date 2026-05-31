@@ -6,17 +6,37 @@
     <description>Recent content in Compliance on Mousa Cloud Consulting Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <copyright>© 2026 Mousa Cloud Consulting</copyright>
-    <lastBuildDate>Mon, 11 May 2026 04:58:00 +0200</lastBuildDate><atom:link href="http://localhost:1313/mcc-blog/tags/compliance/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>© 2026 Mousa Al Bateh</copyright>
+    <lastBuildDate>Fri, 15 May 2026 21:19:00 +0200</lastBuildDate><atom:link href="http://localhost:1313/mcc-blog/tags/compliance/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>S3 Misconfiguration Still Top Risk in 2026</title>
+      <link>http://localhost:1313/mcc-blog/case-studies/s3-misconfiguration-still-top-risk-in-2026/</link>
+      <pubDate>Fri, 15 May 2026 21:19:00 +0200</pubDate>
+      
+      <guid>http://localhost:1313/mcc-blog/case-studies/s3-misconfiguration-still-top-risk-in-2026/</guid>
+      <description>A practical AWS case study showing how public S3 object access, weak regional data design, and missing safeguards can create both security and compliance problems for SaaS providers.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/mcc-blog/case-studies/s3-misconfiguration-still-top-risk-in-2026/featured.png" />
+    </item>
+    
+    <item>
+      <title>How I&#39;d Help a Messy Mid SaaS Company Pass Audit Without Slowing Performance</title>
+      <link>http://localhost:1313/mcc-blog/case-studies/how-id-help-a-messy-mid-saas-company-pass-audit-without-slowing-performance/</link>
+      <pubDate>Thu, 14 May 2026 00:53:00 +0200</pubDate>
+      
+      <guid>http://localhost:1313/mcc-blog/case-studies/how-id-help-a-messy-mid-saas-company-pass-audit-without-slowing-performance/</guid>
+      <description>A hypothetical engagement showing how a growing SaaS company could improve audit readiness, tighten AWS access controls, migrate away from risky database patterns, and reduce operational drag without slowing performance.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/mcc-blog/case-studies/how-id-help-a-messy-mid-saas-company-pass-audit-without-slowing-performance/featured.png" />
+    </item>
     
     <item>
       <title>How Tokenization Reduces Merchants&#39; PCI Scope</title>
-      <link>http://localhost:1313/mcc-blog/case-studies/pci-tokenization/</link>
-      <pubDate>Mon, 11 May 2026 04:58:00 +0200</pubDate>
+      <link>http://localhost:1313/mcc-blog/case-studies/how-tokenization-reduces-merchants-pci-scope/</link>
+      <pubDate>Mon, 11 May 2026 21:18:00 +0200</pubDate>
       
-      <guid>http://localhost:1313/mcc-blog/case-studies/pci-tokenization/</guid>
+      <guid>http://localhost:1313/mcc-blog/case-studies/how-tokenization-reduces-merchants-pci-scope/</guid>
       <description>A practical explanation of how tokenization reduces merchants’ PCI scope by limiting cardholder data exposure and shifting sensitive payment handling away from merchant systems.</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/mcc-blog/case-studies/pci-tokenization/featured.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/mcc-blog/case-studies/how-tokenization-reduces-merchants-pci-scope/featured.png" />
     </item>
     
   </channel>

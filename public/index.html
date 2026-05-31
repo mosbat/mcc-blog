@@ -47,8 +47,22 @@
 
   
   
-    <meta name="author" content="Mousa Cloud Consulting">
+    <meta name="author" content="Mousa Al Bateh">
   
+  
+    
+      
+        
+          <link href="https://www.mousa-cloud.com/" rel="me">
+        
+      
+    
+      
+        
+          <link href="https://www.tiktok.com/@strange.developer" rel="me">
+        
+      
+    
   
 
   
@@ -195,6 +209,42 @@
 
 
 
+  
+  
+  <script type="module">
+    const loadFirebase = async () => {
+      if (window.__blowfishFirebaseLoaded) return;
+      if (localStorage.getItem("analytics_consent") !== "accepted") return;
+      window.__blowfishFirebaseLoaded = true;
+      await import("\/mcc-blog\/js\/firebase.min.cad74e0625f72f359ec6d6fed579b87733749de70400e7614048050ed08832ee3f58983d5d139fb1ddc5f7f2f5047d45ed80ec923534a3660fc3a7965f936866.js");
+    };
+
+    loadFirebase();
+    window.addEventListener("consent-granted", loadFirebase);
+  </script>
+
+  
+    
+<script id="firebase-config" 
+        type="application/json"
+        data-views="views_home"
+        data-likes="likes_home">
+  {
+    "config": {
+      "apiKey": "AIzaSyBylramzW1Z7vt5orOpA-8AAedHHIxVCSs",
+      "authDomain": "mousa-cloud-consulting-blog.firebaseapp.com",
+      "projectId": "mousa-cloud-consulting-blog",
+      "storageBucket": "mousa-cloud-consulting-blog.firebasestorage.app",
+      "messagingSenderId": "937555853941",
+      "appId": "1:937555853941:web:733cde8acedb74d23eee3c",
+      "measurementId": "G-FL2TQQ929M"
+    }
+  }
+</script>
+
+  
+
+
 
 
 
@@ -220,7 +270,7 @@
     
     "publisher" : {
       "@type": "Person",
-      "name": "Mousa Cloud Consulting"
+      "name": "Mousa Al Bateh"
     }
   }
   </script>
@@ -231,6 +281,22 @@
   
 
   
+  
+    <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){ dataLayer.push(arguments); }
+  window.gtag = gtag;
+
+  gtag('consent', 'default', {
+    analytics_storage: 'denied',
+    ad_storage: 'denied',
+    ad_user_data: 'denied',
+    ad_personalization: 'denied',
+    wait_for_update: 2000
+  });
+
+
+</script>
   
 
   
@@ -649,16 +715,71 @@
   class=" flex flex-col items-center justify-center text-center">
   <header class="relative px-1 py-1 flex flex-col items-center mb-3">
     
+      
+      
+        
+      
+      
+        
+        
+        
+          
+          
+          
+        
+        <img
+          class="mb-2 h-36 w-36 rounded-full"
+          width="144"
+          height="144"
+          alt="Mousa Al Bateh"
+          src="/mcc-blog/images/profile-pic_hu_46f7c8c7062fc90a.jpg"
+          data-zoom-src="/mcc-blog/images/profile-pic_hu_8734da1a2e056b11.jpg">
+      
+    
     <h1 class="text-4xl font-extrabold">
-      Mousa Cloud Consulting
+      Mousa Al Bateh
     </h1>
     
       <h2 class="text-xl text-neutral-500 dark:text-neutral-400">
-        Cloud Security &amp; AWS Architecture Consulting
+        CCSP | AWS Solutions Architect | Cloud Security Consultant
       </h2>
     
     <div class="mt-1 text-2xl">
       
+  <div class="flex flex-wrap text-neutral-400 dark:text-neutral-500 space-x-2">
+    
+      
+        
+        <a
+          class=" hover:text-primary-700 dark:hover:text-primary-400"
+          href="https://www.mousa-cloud.com/"
+          
+          target="_blank"
+          aria-label="Link"
+          title="Link"
+          rel="me noopener noreferrer"
+          ><span class="inline-block align-text-bottom"><span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path fill="currentColor" d="M172.5 131.1C228.1 75.51 320.5 75.51 376.1 131.1C426.1 181.1 433.5 260.8 392.4 318.3L391.3 319.9C381 334.2 361 337.6 346.7 327.3C332.3 317 328.9 297 339.2 282.7L340.3 281.1C363.2 249 359.6 205.1 331.7 177.2C300.3 145.8 249.2 145.8 217.7 177.2L105.5 289.5C73.99 320.1 73.99 372 105.5 403.5C133.3 431.4 177.3 435 209.3 412.1L210.9 410.1C225.3 400.7 245.3 404 255.5 418.4C265.8 432.8 262.5 452.8 248.1 463.1L246.5 464.2C188.1 505.3 110.2 498.7 60.21 448.8C3.741 392.3 3.741 300.7 60.21 244.3L172.5 131.1zM467.5 380C411 436.5 319.5 436.5 263 380C213 330 206.5 251.2 247.6 193.7L248.7 192.1C258.1 177.8 278.1 174.4 293.3 184.7C307.7 194.1 311.1 214.1 300.8 229.3L299.7 230.9C276.8 262.1 280.4 306.9 308.3 334.8C339.7 366.2 390.8 366.2 422.3 334.8L534.5 222.5C566 191 566 139.1 534.5 108.5C506.7 80.63 462.7 76.99 430.7 99.9L429.1 101C414.7 111.3 394.7 107.1 384.5 93.58C374.2 79.2 377.5 59.21 391.9 48.94L393.5 47.82C451 6.731 529.8 13.25 579.8 63.24C636.3 119.7 636.3 211.3 579.8 267.7L467.5 380z"/></svg>
+</span></span></a
+        >
+      
+    
+      
+        
+        <a
+          class=" hover:text-primary-700 dark:hover:text-primary-400"
+          href="https://www.tiktok.com/@strange.developer"
+          
+          target="_blank"
+          aria-label="Tiktok"
+          title="Tiktok"
+          rel="me noopener noreferrer"
+          ><span class="inline-block align-text-bottom"><span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z"/></svg>
+</span></span></a
+        >
+      
+    
+  </div>
+
 
     </div>
   </header>
@@ -719,12 +840,14 @@
 
     
     
-      
-      
-    
 
     
     
+      
+        
+        
+          
+        
       
     
   
@@ -733,15 +856,24 @@
 
 <article class="article-link--simple flex flex-col md:flex-row relative">
   
+    <div class="flex-none relative overflow-hidden  thumbnail-shadow md:mr-7 thumbnail">
+      <img
+        src="/mcc-blog/case-studies/why-turning-on-aws-guardduty-is-not-enough/featured_hu_26b4f57aab81a584.png"
+        role="presentation"
+        loading="lazy"
+        decoding="async"
+        class="not-prose absolute inset-0 w-full h-full object-cover">
+    </div>
+  
   <div class=" mt-3 md:mt-0">
     <header class="items-center text-start text-xl font-semibold">
       <a
         
-          href="/mcc-blog/posts/blogcreated/"
+          href="/mcc-blog/case-studies/why-turning-on-aws-guardduty-is-not-enough/"
         
         class="not-prose before:absolute before:inset-0 decoration-primary-500 dark:text-neutral text-xl font-bold text-neutral-800 hover:underline hover:underline-offset-2">
         <h2>
-          Placeholder News Post Title
+          Why Turning On AWS GuardDuty Is Not Enough
           
         </h2>
       </a>
@@ -782,7 +914,11 @@
   
 
   
+    
+  
 
+  
+    
   
 
   
@@ -795,7 +931,51 @@
   <div class="flex flex-row flex-wrap items-center">
     
     
-      <time datetime="2026-05-30T05:58:00&#43;02:00">30 May 2026</time><span class="px-2 text-primary-500">&middot;</span><span>1 word</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">1 min</span>
+      <time datetime="2026-05-17T21:13:00&#43;02:00">17 May 2026</time><span class="px-2 text-primary-500">&middot;</span><span>1523 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">8 mins</span><span class="px-2 text-primary-500">&middot;</span><span>
+  
+  
+    
+    
+      
+      
+        
+        
+      
+      
+    
+  
+  <span
+    id="views_case-studies/monitoring-incident-response/index.md"
+    class="animate-pulse inline-block text-transparent max-h-3 rounded-full -mt-[2px] align-middle bg-neutral-300 dark:bg-neutral-400"
+    title="views"
+    >loading</span
+  >
+  <span class="inline-block align-text-bottom"><span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+<path fill="currentColor" d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM432 256c0 79.5-64.5 144-144 144s-144-64.5-144-144s64.5-144 144-144s144 64.5 144 144zM288 192c0 35.3-28.7 64-64 64c-11.5 0-22.3-3-31.6-8.4c-.2 2.8-.4 5.5-.4 8.4c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6z"/></svg></span></span>
+</span>
+<span class="px-2 text-primary-500">&middot;</span><span>
+  
+  
+    
+    
+      
+      
+        
+        
+      
+      
+    
+  
+  <span
+    id="likes_case-studies/monitoring-incident-response/index.md"
+    class="animate-pulse inline-block text-transparent max-h-3 rounded-full -mt-[2px] align-middle bg-neutral-300 dark:bg-neutral-400"
+    title="likes"
+    >loading</span
+  >
+  <span class="inline-block align-text-bottom"><span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+<path fill="currentColor" d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z"/></svg></span></span>
+</span>
+
     
 
     
@@ -806,9 +986,270 @@
 
   
   
+    <div class="flex flex-row flex-wrap items-center">
+      
+        
+          
+            
+              
+            
+            
+              
+            
+          
+        
+      
+        
+          
+            
+              
+                <a class="relative mt-[0.5rem] me-2" href="/mcc-blog/categories/aws/">
+                  
+                  <span class="flex cursor-pointer">
+  
+  
+  
+    
+    
+  
+  
+    <span
+      class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+  
+    Aws
+  </span>
+</span>
+
+                </a>
+              
+            
+            
+              
+            
+          
+            
+              
+                <a class="relative mt-[0.5rem] me-2" href="/mcc-blog/categories/cloud-security/">
+                  
+                  <span class="flex cursor-pointer">
+  
+  
+  
+    
+    
+  
+  
+    <span
+      class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+  
+    Cloud-Security
+  </span>
+</span>
+
+                </a>
+              
+            
+            
+              
+            
+          
+            
+              
+                <a class="relative mt-[0.5rem] me-2" href="/mcc-blog/categories/incident-response/">
+                  
+                  <span class="flex cursor-pointer">
+  
+  
+  
+    
+    
+  
+  
+    <span
+      class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+  
+    Incident-Response
+  </span>
+</span>
+
+                </a>
+              
+            
+            
+              
+            
+          
+        
+      
+        
+      
+        
+          
+            
+              
+            
+            
+              
+                <a class="relative mt-[0.5rem] me-2" href="/mcc-blog/tags/aws/">
+                  <span class="flex cursor-pointer">
+  
+  
+  
+  
+    <span
+      class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+  
+    Aws
+  </span>
+</span>
+
+                </a>
+              
+            
+          
+            
+              
+            
+            
+              
+                <a class="relative mt-[0.5rem] me-2" href="/mcc-blog/tags/guardduty/">
+                  <span class="flex cursor-pointer">
+  
+  
+  
+  
+    <span
+      class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+  
+    Guardduty
+  </span>
+</span>
+
+                </a>
+              
+            
+          
+            
+              
+            
+            
+              
+                <a class="relative mt-[0.5rem] me-2" href="/mcc-blog/tags/cloud-security/">
+                  <span class="flex cursor-pointer">
+  
+  
+  
+  
+    <span
+      class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+  
+    Cloud-Security
+  </span>
+</span>
+
+                </a>
+              
+            
+          
+            
+              
+            
+            
+              
+                <a class="relative mt-[0.5rem] me-2" href="/mcc-blog/tags/incident-response/">
+                  <span class="flex cursor-pointer">
+  
+  
+  
+  
+    <span
+      class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+  
+    Incident-Response
+  </span>
+</span>
+
+                </a>
+              
+            
+          
+            
+              
+            
+            
+              
+                <a class="relative mt-[0.5rem] me-2" href="/mcc-blog/tags/monitoring/">
+                  <span class="flex cursor-pointer">
+  
+  
+  
+  
+    <span
+      class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+  
+    Monitoring
+  </span>
+</span>
+
+                </a>
+              
+            
+          
+            
+              
+            
+            
+              
+                <a class="relative mt-[0.5rem] me-2" href="/mcc-blog/tags/iso-27001/">
+                  <span class="flex cursor-pointer">
+  
+  
+  
+  
+    <span
+      class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+  
+    Iso-27001
+  </span>
+</span>
+
+                </a>
+              
+            
+          
+            
+              
+            
+            
+              
+                <a class="relative mt-[0.5rem] me-2" href="/mcc-blog/tags/devsecops/">
+                  <span class="flex cursor-pointer">
+  
+  
+  
+  
+    <span
+      class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+  
+    Devsecops
+  </span>
+</span>
+
+                </a>
+              
+            
+          
+        
+      
+    </div>
+  
 
 
     </div>
+    
+      <div class="article-link__summary prose dark:prose-invert max-w-fit mt-1 line-clamp-3">
+        A mid-sized SaaS company had AWS GuardDuty enabled, but an old unresolved alert exposed a deeper gap in cloud monitoring and incident response readiness.
+      </div>
     
   </div>
   <div class="px-6 pt-4 pb-2"></div>
@@ -871,7 +1312,7 @@
   
     <div class="flex-none relative overflow-hidden  thumbnail-shadow md:mr-7 thumbnail">
       <img
-        src="/mcc-blog/case-studies/s3-case-study/featured_hu_c8c38122661d0f05.png"
+        src="/mcc-blog/case-studies/s3-misconfiguration-still-top-risk-in-2026/featured_hu_c8c38122661d0f05.png"
         role="presentation"
         loading="lazy"
         decoding="async"
@@ -882,11 +1323,11 @@
     <header class="items-center text-start text-xl font-semibold">
       <a
         
-          href="/mcc-blog/case-studies/s3-case-study/"
+          href="/mcc-blog/case-studies/s3-misconfiguration-still-top-risk-in-2026/"
         
         class="not-prose before:absolute before:inset-0 decoration-primary-500 dark:text-neutral text-xl font-bold text-neutral-800 hover:underline hover:underline-offset-2">
         <h2>
-          S3 Misconfiguration Still Top Risk in 2026: Case Study and Fixes for SaaS Providers
+          S3 Misconfiguration Still Top Risk in 2026
           
         </h2>
       </a>
@@ -927,7 +1368,11 @@
   
 
   
+    
+  
 
+  
+    
   
 
   
@@ -940,7 +1385,51 @@
   <div class="flex flex-row flex-wrap items-center">
     
     
-      <time datetime="2026-05-15T05:27:00&#43;02:00">15 May 2026</time><span class="px-2 text-primary-500">&middot;</span><span>908 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">5 mins</span>
+      <time datetime="2026-05-15T21:19:00&#43;02:00">15 May 2026</time><span class="px-2 text-primary-500">&middot;</span><span>908 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">5 mins</span><span class="px-2 text-primary-500">&middot;</span><span>
+  
+  
+    
+    
+      
+      
+        
+        
+      
+      
+    
+  
+  <span
+    id="views_case-studies/s3-case-study/index.md"
+    class="animate-pulse inline-block text-transparent max-h-3 rounded-full -mt-[2px] align-middle bg-neutral-300 dark:bg-neutral-400"
+    title="views"
+    >loading</span
+  >
+  <span class="inline-block align-text-bottom"><span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+<path fill="currentColor" d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM432 256c0 79.5-64.5 144-144 144s-144-64.5-144-144s64.5-144 144-144s144 64.5 144 144zM288 192c0 35.3-28.7 64-64 64c-11.5 0-22.3-3-31.6-8.4c-.2 2.8-.4 5.5-.4 8.4c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6z"/></svg></span></span>
+</span>
+<span class="px-2 text-primary-500">&middot;</span><span>
+  
+  
+    
+    
+      
+      
+        
+        
+      
+      
+    
+  
+  <span
+    id="likes_case-studies/s3-case-study/index.md"
+    class="animate-pulse inline-block text-transparent max-h-3 rounded-full -mt-[2px] align-middle bg-neutral-300 dark:bg-neutral-400"
+    title="likes"
+    >loading</span
+  >
+  <span class="inline-block align-text-bottom"><span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+<path fill="currentColor" d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z"/></svg></span></span>
+</span>
+
     
 
     
@@ -994,7 +1483,7 @@
           
             
               
-                <a class="relative mt-[0.5rem] me-2" href="/mcc-blog/categories/security-architecture/">
+                <a class="relative mt-[0.5rem] me-2" href="/mcc-blog/categories/cloud-security/">
                   
                   <span class="flex cursor-pointer">
   
@@ -1007,7 +1496,7 @@
     <span
       class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
   
-    Security-Architecture
+    Cloud-Security
   </span>
 </span>
 
@@ -1077,7 +1566,7 @@
             
             
               
-                <a class="relative mt-[0.5rem] me-2" href="/mcc-blog/tags/amazon-s3/">
+                <a class="relative mt-[0.5rem] me-2" href="/mcc-blog/tags/s3/">
                   <span class="flex cursor-pointer">
   
   
@@ -1086,7 +1575,7 @@
     <span
       class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
   
-    Amazon-S3
+    S3
   </span>
 </span>
 
@@ -1165,7 +1654,7 @@
             
             
               
-                <a class="relative mt-[0.5rem] me-2" href="/mcc-blog/tags/pci/">
+                <a class="relative mt-[0.5rem] me-2" href="/mcc-blog/tags/security-architecture/">
                   <span class="flex cursor-pointer">
   
   
@@ -1174,29 +1663,7 @@
     <span
       class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
   
-    Pci
-  </span>
-</span>
-
-                </a>
-              
-            
-          
-            
-              
-            
-            
-              
-                <a class="relative mt-[0.5rem] me-2" href="/mcc-blog/tags/saas/">
-                  <span class="flex cursor-pointer">
-  
-  
-  
-  
-    <span
-      class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-  
-    Saas
+    Security-Architecture
   </span>
 </span>
 
@@ -1226,6 +1693,28 @@
               
             
           
+            
+              
+            
+            
+              
+                <a class="relative mt-[0.5rem] me-2" href="/mcc-blog/tags/compliance/">
+                  <span class="flex cursor-pointer">
+  
+  
+  
+  
+    <span
+      class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+  
+    Compliance
+  </span>
+</span>
+
+                </a>
+              
+            
+          
         
       
     </div>
@@ -1233,6 +1722,10 @@
 
 
     </div>
+    
+      <div class="article-link__summary prose dark:prose-invert max-w-fit mt-1 line-clamp-3">
+        A practical AWS case study showing how public S3 object access, weak regional data design, and missing safeguards can create both security and compliance problems for SaaS providers.
+      </div>
     
   </div>
   <div class="px-6 pt-4 pb-2"></div>
@@ -1295,7 +1788,7 @@
   
     <div class="flex-none relative overflow-hidden  thumbnail-shadow md:mr-7 thumbnail">
       <img
-        src="/mcc-blog/case-studies/pci-tokenization/featured_hu_c810eef5214c8a7b.png"
+        src="/mcc-blog/case-studies/how-id-help-a-messy-mid-saas-company-pass-audit-without-slowing-performance/featured_hu_efe82006147cac4b.png"
         role="presentation"
         loading="lazy"
         decoding="async"
@@ -1306,7 +1799,527 @@
     <header class="items-center text-start text-xl font-semibold">
       <a
         
-          href="/mcc-blog/case-studies/pci-tokenization/"
+          href="/mcc-blog/case-studies/how-id-help-a-messy-mid-saas-company-pass-audit-without-slowing-performance/"
+        
+        class="not-prose before:absolute before:inset-0 decoration-primary-500 dark:text-neutral text-xl font-bold text-neutral-800 hover:underline hover:underline-offset-2">
+        <h2>
+          How I'd Help a Messy Mid SaaS Company Pass Audit Without Slowing Performance
+          
+        </h2>
+      </a>
+      
+      
+    </header>
+    <div class="text-sm text-neutral-500 dark:text-neutral-400">
+      
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+    
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+
+  <div class="flex flex-row flex-wrap items-center">
+    
+    
+      <time datetime="2026-05-14T00:53:00&#43;02:00">14 May 2026</time><span class="px-2 text-primary-500">&middot;</span><span>2579 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">13 mins</span><span class="px-2 text-primary-500">&middot;</span><span>
+  
+  
+    
+    
+      
+      
+        
+        
+      
+      
+    
+  
+  <span
+    id="views_case-studies/messy-saas-fix/index.md"
+    class="animate-pulse inline-block text-transparent max-h-3 rounded-full -mt-[2px] align-middle bg-neutral-300 dark:bg-neutral-400"
+    title="views"
+    >loading</span
+  >
+  <span class="inline-block align-text-bottom"><span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+<path fill="currentColor" d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM432 256c0 79.5-64.5 144-144 144s-144-64.5-144-144s64.5-144 144-144s144 64.5 144 144zM288 192c0 35.3-28.7 64-64 64c-11.5 0-22.3-3-31.6-8.4c-.2 2.8-.4 5.5-.4 8.4c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6z"/></svg></span></span>
+</span>
+<span class="px-2 text-primary-500">&middot;</span><span>
+  
+  
+    
+    
+      
+      
+        
+        
+      
+      
+    
+  
+  <span
+    id="likes_case-studies/messy-saas-fix/index.md"
+    class="animate-pulse inline-block text-transparent max-h-3 rounded-full -mt-[2px] align-middle bg-neutral-300 dark:bg-neutral-400"
+    title="likes"
+    >loading</span
+  >
+  <span class="inline-block align-text-bottom"><span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+<path fill="currentColor" d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z"/></svg></span></span>
+</span>
+
+    
+
+    
+    
+  </div>
+
+  
+
+  
+  
+    <div class="flex flex-row flex-wrap items-center">
+      
+        
+          
+            
+              
+            
+            
+              
+            
+          
+        
+      
+        
+          
+            
+              
+                <a class="relative mt-[0.5rem] me-2" href="/mcc-blog/categories/saas/">
+                  
+                  <span class="flex cursor-pointer">
+  
+  
+  
+    
+    
+  
+  
+    <span
+      class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+  
+    Saas
+  </span>
+</span>
+
+                </a>
+              
+            
+            
+              
+            
+          
+            
+              
+                <a class="relative mt-[0.5rem] me-2" href="/mcc-blog/categories/cloud-security/">
+                  
+                  <span class="flex cursor-pointer">
+  
+  
+  
+    
+    
+  
+  
+    <span
+      class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+  
+    Cloud-Security
+  </span>
+</span>
+
+                </a>
+              
+            
+            
+              
+            
+          
+            
+              
+                <a class="relative mt-[0.5rem] me-2" href="/mcc-blog/categories/compliance/">
+                  
+                  <span class="flex cursor-pointer">
+  
+  
+  
+    
+    
+  
+  
+    <span
+      class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+  
+    Compliance
+  </span>
+</span>
+
+                </a>
+              
+            
+            
+              
+            
+          
+        
+      
+        
+      
+        
+          
+            
+              
+            
+            
+              
+                <a class="relative mt-[0.5rem] me-2" href="/mcc-blog/tags/saas/">
+                  <span class="flex cursor-pointer">
+  
+  
+  
+  
+    <span
+      class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+  
+    Saas
+  </span>
+</span>
+
+                </a>
+              
+            
+          
+            
+              
+            
+            
+              
+                <a class="relative mt-[0.5rem] me-2" href="/mcc-blog/tags/aws/">
+                  <span class="flex cursor-pointer">
+  
+  
+  
+  
+    <span
+      class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+  
+    Aws
+  </span>
+</span>
+
+                </a>
+              
+            
+          
+            
+              
+            
+            
+              
+                <a class="relative mt-[0.5rem] me-2" href="/mcc-blog/tags/cloud-security/">
+                  <span class="flex cursor-pointer">
+  
+  
+  
+  
+    <span
+      class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+  
+    Cloud-Security
+  </span>
+</span>
+
+                </a>
+              
+            
+          
+            
+              
+            
+            
+              
+                <a class="relative mt-[0.5rem] me-2" href="/mcc-blog/tags/audit-readiness/">
+                  <span class="flex cursor-pointer">
+  
+  
+  
+  
+    <span
+      class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+  
+    Audit-Readiness
+  </span>
+</span>
+
+                </a>
+              
+            
+          
+            
+              
+            
+            
+              
+                <a class="relative mt-[0.5rem] me-2" href="/mcc-blog/tags/iam/">
+                  <span class="flex cursor-pointer">
+  
+  
+  
+  
+    <span
+      class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+  
+    Iam
+  </span>
+</span>
+
+                </a>
+              
+            
+          
+            
+              
+            
+            
+              
+                <a class="relative mt-[0.5rem] me-2" href="/mcc-blog/tags/least-privilege/">
+                  <span class="flex cursor-pointer">
+  
+  
+  
+  
+    <span
+      class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+  
+    Least-Privilege
+  </span>
+</span>
+
+                </a>
+              
+            
+          
+            
+              
+            
+            
+              
+                <a class="relative mt-[0.5rem] me-2" href="/mcc-blog/tags/aurora/">
+                  <span class="flex cursor-pointer">
+  
+  
+  
+  
+    <span
+      class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+  
+    Aurora
+  </span>
+</span>
+
+                </a>
+              
+            
+          
+            
+              
+            
+            
+              
+                <a class="relative mt-[0.5rem] me-2" href="/mcc-blog/tags/cost-optimization/">
+                  <span class="flex cursor-pointer">
+  
+  
+  
+  
+    <span
+      class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+  
+    Cost-Optimization
+  </span>
+</span>
+
+                </a>
+              
+            
+          
+            
+              
+            
+            
+              
+                <a class="relative mt-[0.5rem] me-2" href="/mcc-blog/tags/security-architecture/">
+                  <span class="flex cursor-pointer">
+  
+  
+  
+  
+    <span
+      class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+  
+    Security-Architecture
+  </span>
+</span>
+
+                </a>
+              
+            
+          
+            
+              
+            
+            
+              
+                <a class="relative mt-[0.5rem] me-2" href="/mcc-blog/tags/compliance/">
+                  <span class="flex cursor-pointer">
+  
+  
+  
+  
+    <span
+      class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+  
+    Compliance
+  </span>
+</span>
+
+                </a>
+              
+            
+          
+        
+      
+    </div>
+  
+
+
+    </div>
+    
+      <div class="article-link__summary prose dark:prose-invert max-w-fit mt-1 line-clamp-3">
+        A hypothetical engagement showing how a growing SaaS company could improve audit readiness, tighten AWS access controls, migrate away from risky database patterns, and reduce operational drag without slowing performance.
+      </div>
+    
+  </div>
+  <div class="px-6 pt-4 pb-2"></div>
+</article>
+
+  
+    
+
+
+
+
+
+
+
+
+  
+  
+  
+
+
+
+
+
+
+
+
+  
+  
+    
+
+    
+    
+      
+      
+        
+      
+        
+      
+        
+      
+    
+
+    
+    
+
+    
+    
+      
+        
+        
+          
+        
+      
+    
+  
+
+
+
+<article class="article-link--simple flex flex-col md:flex-row relative">
+  
+    <div class="flex-none relative overflow-hidden  thumbnail-shadow md:mr-7 thumbnail">
+      <img
+        src="/mcc-blog/case-studies/how-tokenization-reduces-merchants-pci-scope/featured_hu_c810eef5214c8a7b.png"
+        role="presentation"
+        loading="lazy"
+        decoding="async"
+        class="not-prose absolute inset-0 w-full h-full object-cover">
+    </div>
+  
+  <div class=" mt-3 md:mt-0">
+    <header class="items-center text-start text-xl font-semibold">
+      <a
+        
+          href="/mcc-blog/case-studies/how-tokenization-reduces-merchants-pci-scope/"
         
         class="not-prose before:absolute before:inset-0 decoration-primary-500 dark:text-neutral text-xl font-bold text-neutral-800 hover:underline hover:underline-offset-2">
         <h2>
@@ -1351,7 +2364,11 @@
   
 
   
+    
+  
 
+  
+    
   
 
   
@@ -1364,7 +2381,51 @@
   <div class="flex flex-row flex-wrap items-center">
     
     
-      <time datetime="2026-05-11T04:58:00&#43;02:00">11 May 2026</time><span class="px-2 text-primary-500">&middot;</span><span>513 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">3 mins</span>
+      <time datetime="2026-05-11T21:18:00&#43;02:00">11 May 2026</time><span class="px-2 text-primary-500">&middot;</span><span>513 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">3 mins</span><span class="px-2 text-primary-500">&middot;</span><span>
+  
+  
+    
+    
+      
+      
+        
+        
+      
+      
+    
+  
+  <span
+    id="views_case-studies/pci-tokenization/index.md"
+    class="animate-pulse inline-block text-transparent max-h-3 rounded-full -mt-[2px] align-middle bg-neutral-300 dark:bg-neutral-400"
+    title="views"
+    >loading</span
+  >
+  <span class="inline-block align-text-bottom"><span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+<path fill="currentColor" d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM432 256c0 79.5-64.5 144-144 144s-144-64.5-144-144s64.5-144 144-144s144 64.5 144 144zM288 192c0 35.3-28.7 64-64 64c-11.5 0-22.3-3-31.6-8.4c-.2 2.8-.4 5.5-.4 8.4c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6z"/></svg></span></span>
+</span>
+<span class="px-2 text-primary-500">&middot;</span><span>
+  
+  
+    
+    
+      
+      
+        
+        
+      
+      
+    
+  
+  <span
+    id="likes_case-studies/pci-tokenization/index.md"
+    class="animate-pulse inline-block text-transparent max-h-3 rounded-full -mt-[2px] align-middle bg-neutral-300 dark:bg-neutral-400"
+    title="likes"
+    >loading</span
+  >
+  <span class="inline-block align-text-bottom"><span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+<path fill="currentColor" d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z"/></svg></span></span>
+</span>
+
     
 
     
@@ -1614,6 +2675,243 @@
 
     </div>
     
+      <div class="article-link__summary prose dark:prose-invert max-w-fit mt-1 line-clamp-3">
+        A practical explanation of how tokenization reduces merchants’ PCI scope by limiting cardholder data exposure and shifting sensitive payment handling away from merchant systems.
+      </div>
+    
+  </div>
+  <div class="px-6 pt-4 pb-2"></div>
+</article>
+
+  
+    
+
+
+
+
+
+
+
+
+  
+  
+  
+
+
+
+
+
+
+
+
+  
+  
+    
+
+    
+    
+      
+      
+        
+      
+        
+      
+        
+      
+    
+
+    
+    
+
+    
+    
+      
+        
+        
+          
+        
+      
+    
+  
+
+
+
+<article class="article-link--simple flex flex-col md:flex-row relative">
+  
+    <div class="flex-none relative overflow-hidden  thumbnail-shadow md:mr-7 thumbnail">
+      <img
+        src="/mcc-blog/posts/blog-created/featured_hu_7fe2970aef8bb6df.png"
+        role="presentation"
+        loading="lazy"
+        decoding="async"
+        class="not-prose absolute inset-0 w-full h-full object-cover">
+    </div>
+  
+  <div class=" mt-3 md:mt-0">
+    <header class="items-center text-start text-xl font-semibold">
+      <a
+        
+          href="/mcc-blog/posts/blog-created/"
+        
+        class="not-prose before:absolute before:inset-0 decoration-primary-500 dark:text-neutral text-xl font-bold text-neutral-800 hover:underline hover:underline-offset-2">
+        <h2>
+          Mousa Cloud Consulting Blog Launched
+          
+        </h2>
+      </a>
+      
+      
+    </header>
+    <div class="text-sm text-neutral-500 dark:text-neutral-400">
+      
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+    
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+
+  <div class="flex flex-row flex-wrap items-center">
+    
+    
+      <time datetime="2026-05-10T05:58:00&#43;02:00">10 May 2026</time><span class="px-2 text-primary-500">&middot;</span><span>78 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">1 min</span><span class="px-2 text-primary-500">&middot;</span><span>
+  
+  
+    
+    
+      
+      
+        
+        
+      
+      
+    
+  
+  <span
+    id="views_posts/blog-created/index.md"
+    class="animate-pulse inline-block text-transparent max-h-3 rounded-full -mt-[2px] align-middle bg-neutral-300 dark:bg-neutral-400"
+    title="views"
+    >loading</span
+  >
+  <span class="inline-block align-text-bottom"><span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+<path fill="currentColor" d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM432 256c0 79.5-64.5 144-144 144s-144-64.5-144-144s64.5-144 144-144s144 64.5 144 144zM288 192c0 35.3-28.7 64-64 64c-11.5 0-22.3-3-31.6-8.4c-.2 2.8-.4 5.5-.4 8.4c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6z"/></svg></span></span>
+</span>
+<span class="px-2 text-primary-500">&middot;</span><span>
+  
+  
+    
+    
+      
+      
+        
+        
+      
+      
+    
+  
+  <span
+    id="likes_posts/blog-created/index.md"
+    class="animate-pulse inline-block text-transparent max-h-3 rounded-full -mt-[2px] align-middle bg-neutral-300 dark:bg-neutral-400"
+    title="likes"
+    >loading</span
+  >
+  <span class="inline-block align-text-bottom"><span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+<path fill="currentColor" d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z"/></svg></span></span>
+</span>
+
+    
+
+    
+    
+  </div>
+
+  
+
+  
+  
+    <div class="flex flex-row flex-wrap items-center">
+      
+        
+      
+        
+          
+            
+              
+                <a class="relative mt-[0.5rem] me-2" href="/mcc-blog/categories/news/">
+                  
+                  <span class="flex cursor-pointer">
+  
+  
+  
+    
+    
+  
+  
+    <span
+      class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+  
+    News
+  </span>
+</span>
+
+                </a>
+              
+            
+            
+              
+            
+          
+        
+      
+        
+      
+        
+      
+    </div>
+  
+
+
+    </div>
+    
   </div>
   <div class="px-6 pt-4 pb-2"></div>
 </article>
@@ -1737,7 +3035,7 @@
       <p class="text-sm text-neutral-500 dark:text-neutral-400">
           &copy;
           2026
-          Mousa Cloud Consulting
+          Mousa Cloud Consulting Ltd
       </p>
     
 
@@ -1754,6 +3052,48 @@
     </script>
   
   
+  
+    <div id="consent-banner"
+  style="display:none;position:fixed;left:1rem;right:1rem;bottom:1rem;z-index:9999;max-width:760px;margin:auto;background:#111827;color:#f9fafb;padding:1rem 1.25rem;border-radius:14px;box-shadow:0 12px 32px rgba(0,0,0,.28);">
+  <p style="margin:0 0 .85rem 0;line-height:1.5;">
+    This site uses cookies and similar technologies for analytics and to enable views and likes. These features rely on
+    Firebase and will remain disabled unless you give consent.
+  </p>
+  <div style="display:flex;gap:.75rem;flex-wrap:wrap;">
+    <button id="consent-accept"
+      style="border:0;border-radius:10px;padding:.65rem 1rem;background:#f9fafb;color:#111827;cursor:pointer;">
+      Accept analytics
+    </button>
+    <button id="consent-decline"
+      style="border:1px solid #6b7280;border-radius:10px;padding:.65rem 1rem;background:transparent;color:#f9fafb;cursor:pointer;">
+      Decline
+    </button>
+  </div>
+</div>
+
+<script>
+  (function () {
+    const KEY = "analytics_consent";
+    const banner = document.getElementById("consent-banner");
+    const saved = localStorage.getItem(KEY);
+
+    if (!saved && banner) {
+      banner.style.display = "block";
+    }
+
+    document.getElementById("consent-accept")?.addEventListener("click", function () {
+      localStorage.setItem(KEY, "accepted");
+      banner.style.display = "none";
+
+      window.dispatchEvent(new Event("consent-granted"));
+    });
+
+    document.getElementById("consent-decline")?.addEventListener("click", function () {
+      localStorage.setItem(KEY, "declined");
+      banner.style.display = "none";
+    });
+  })();
+</script>
   
 </footer>
 <div

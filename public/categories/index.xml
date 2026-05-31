@@ -6,23 +6,13 @@
     <description>Recent content in Categories on Mousa Cloud Consulting Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <copyright>© 2026 Mousa Cloud Consulting</copyright>
-    <lastBuildDate>Sat, 30 May 2026 05:58:00 +0200</lastBuildDate><atom:link href="http://localhost:1313/mcc-blog/categories/index.xml" rel="self" type="application/rss+xml" />
-    
-    <item>
-      <title>News</title>
-      <link>http://localhost:1313/mcc-blog/categories/news/</link>
-      <pubDate>Sat, 30 May 2026 05:58:00 +0200</pubDate>
-      
-      <guid>http://localhost:1313/mcc-blog/categories/news/</guid>
-      <description></description>
-      
-    </item>
+    <copyright>© 2026 Mousa Al Bateh</copyright>
+    <lastBuildDate>Sun, 17 May 2026 21:13:00 +0200</lastBuildDate><atom:link href="http://localhost:1313/mcc-blog/categories/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Aws</title>
       <link>http://localhost:1313/mcc-blog/categories/aws/</link>
-      <pubDate>Fri, 15 May 2026 05:27:00 +0200</pubDate>
+      <pubDate>Sun, 17 May 2026 21:13:00 +0200</pubDate>
       
       <guid>http://localhost:1313/mcc-blog/categories/aws/</guid>
       <description></description>
@@ -30,9 +20,29 @@
     </item>
     
     <item>
+      <title>Cloud-Security</title>
+      <link>http://localhost:1313/mcc-blog/categories/cloud-security/</link>
+      <pubDate>Sun, 17 May 2026 21:13:00 +0200</pubDate>
+      
+      <guid>http://localhost:1313/mcc-blog/categories/cloud-security/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Incident-Response</title>
+      <link>http://localhost:1313/mcc-blog/categories/incident-response/</link>
+      <pubDate>Sun, 17 May 2026 21:13:00 +0200</pubDate>
+      
+      <guid>http://localhost:1313/mcc-blog/categories/incident-response/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
       <title>Compliance</title>
       <link>http://localhost:1313/mcc-blog/categories/compliance/</link>
-      <pubDate>Fri, 15 May 2026 05:27:00 +0200</pubDate>
+      <pubDate>Fri, 15 May 2026 21:19:00 +0200</pubDate>
       
       <guid>http://localhost:1313/mcc-blog/categories/compliance/</guid>
       <description></description>
@@ -40,11 +50,11 @@
     </item>
     
     <item>
-      <title>Security-Architecture</title>
-      <link>http://localhost:1313/mcc-blog/categories/security-architecture/</link>
-      <pubDate>Fri, 15 May 2026 05:27:00 +0200</pubDate>
+      <title>Saas</title>
+      <link>http://localhost:1313/mcc-blog/categories/saas/</link>
+      <pubDate>Thu, 14 May 2026 00:53:00 +0200</pubDate>
       
-      <guid>http://localhost:1313/mcc-blog/categories/security-architecture/</guid>
+      <guid>http://localhost:1313/mcc-blog/categories/saas/</guid>
       <description></description>
       
     </item>
@@ -52,9 +62,29 @@
     <item>
       <title>Payments</title>
       <link>http://localhost:1313/mcc-blog/categories/payments/</link>
-      <pubDate>Mon, 11 May 2026 04:58:00 +0200</pubDate>
+      <pubDate>Mon, 11 May 2026 21:18:00 +0200</pubDate>
       
       <guid>http://localhost:1313/mcc-blog/categories/payments/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Security-Architecture</title>
+      <link>http://localhost:1313/mcc-blog/categories/security-architecture/</link>
+      <pubDate>Mon, 11 May 2026 21:18:00 +0200</pubDate>
+      
+      <guid>http://localhost:1313/mcc-blog/categories/security-architecture/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>News</title>
+      <link>http://localhost:1313/mcc-blog/categories/news/</link>
+      <pubDate>Sun, 10 May 2026 05:58:00 +0200</pubDate>
+      
+      <guid>http://localhost:1313/mcc-blog/categories/news/</guid>
       <description></description>
       
     </item>

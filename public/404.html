@@ -40,8 +40,22 @@
 
   
   
-    <meta name="author" content="Mousa Cloud Consulting">
+    <meta name="author" content="Mousa Al Bateh">
   
+  
+    
+      
+        
+          <link href="https://www.mousa-cloud.com/" rel="me">
+        
+      
+    
+      
+        
+          <link href="https://www.tiktok.com/@strange.developer" rel="me">
+        
+      
+    
   
 
   
@@ -188,6 +202,23 @@
 
 
 
+  
+  
+  <script type="module">
+    const loadFirebase = async () => {
+      if (window.__blowfishFirebaseLoaded) return;
+      if (localStorage.getItem("analytics_consent") !== "accepted") return;
+      window.__blowfishFirebaseLoaded = true;
+      await import("\/mcc-blog\/js\/firebase.min.cad74e0625f72f359ec6d6fed579b87733749de70400e7614048050ed08832ee3f58983d5d139fb1ddc5f7f2f5047d45ed80ec923534a3660fc3a7965f936866.js");
+    };
+
+    loadFirebase();
+    window.addEventListener("consent-granted", loadFirebase);
+  </script>
+
+  
+
+
 
 
 
@@ -213,7 +244,7 @@
     "url" : "http://localhost:1313/mcc-blog/404.html",
     "author" : {
       "@type": "Person",
-      "name": "Mousa Cloud Consulting"
+      "name": "Mousa Al Bateh"
     },
     
     
@@ -234,6 +265,22 @@
   
 
   
+  
+    <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){ dataLayer.push(arguments); }
+  window.gtag = gtag;
+
+  gtag('consent', 'default', {
+    analytics_storage: 'denied',
+    ad_storage: 'denied',
+    ad_user_data: 'denied',
+    ad_personalization: 'denied',
+    wait_for_update: 2000
+  });
+
+
+</script>
   
 
   
@@ -760,7 +807,7 @@
       <p class="text-sm text-neutral-500 dark:text-neutral-400">
           &copy;
           2026
-          Mousa Cloud Consulting
+          Mousa Cloud Consulting Ltd
       </p>
     
 
@@ -777,6 +824,48 @@
     </script>
   
   
+  
+    <div id="consent-banner"
+  style="display:none;position:fixed;left:1rem;right:1rem;bottom:1rem;z-index:9999;max-width:760px;margin:auto;background:#111827;color:#f9fafb;padding:1rem 1.25rem;border-radius:14px;box-shadow:0 12px 32px rgba(0,0,0,.28);">
+  <p style="margin:0 0 .85rem 0;line-height:1.5;">
+    This site uses cookies and similar technologies for analytics and to enable views and likes. These features rely on
+    Firebase and will remain disabled unless you give consent.
+  </p>
+  <div style="display:flex;gap:.75rem;flex-wrap:wrap;">
+    <button id="consent-accept"
+      style="border:0;border-radius:10px;padding:.65rem 1rem;background:#f9fafb;color:#111827;cursor:pointer;">
+      Accept analytics
+    </button>
+    <button id="consent-decline"
+      style="border:1px solid #6b7280;border-radius:10px;padding:.65rem 1rem;background:transparent;color:#f9fafb;cursor:pointer;">
+      Decline
+    </button>
+  </div>
+</div>
+
+<script>
+  (function () {
+    const KEY = "analytics_consent";
+    const banner = document.getElementById("consent-banner");
+    const saved = localStorage.getItem(KEY);
+
+    if (!saved && banner) {
+      banner.style.display = "block";
+    }
+
+    document.getElementById("consent-accept")?.addEventListener("click", function () {
+      localStorage.setItem(KEY, "accepted");
+      banner.style.display = "none";
+
+      window.dispatchEvent(new Event("consent-granted"));
+    });
+
+    document.getElementById("consent-decline")?.addEventListener("click", function () {
+      localStorage.setItem(KEY, "declined");
+      banner.style.display = "none";
+    });
+  })();
+</script>
   
 </footer>
 <div

@@ -1,15 +1,26 @@
 +++
 title = "How Tokenization Reduces Merchants' PCI Scope"
-date = 2026-05-11T04:58:00+02:00
+date = 2026-05-11T21:18:00+02:00
+lastmod = 2026-05-11T21:18:00+02:00
 description = "An overview of how tokenization reduces PCI scope, lowers payment data exposure, and helps merchants simplify compliance and security operations."
 summary = "A practical explanation of how tokenization reduces merchants’ PCI scope by limiting cardholder data exposure and shifting sensitive payment handling away from merchant systems."
+slug = "how-tokenization-reduces-merchants-pci-scope"
 tags = ["pci-dss", "tokenization", "payments", "cloud-security", "security-architecture", "compliance"]
 categories = ["payments", "compliance", "security-architecture"]
 authors = ["mousa"]
+draft = false
 showTableOfContents = true
 showTaxonomies = true
 showWordCount = true
 showReadingTime = true
+showDate = true
+showDateUpdated = true
+showAuthor = true
+showBreadcrumbs = true
+showHeadingAnchors = true
+showPagination = true
+showSummary = true
+sharingLinks = ["email","reddit","telegram","twitter","linkedin"]
 +++
 
 Tokenization is the process of replacing sensitive data (PII, financial, etc…) with a token.

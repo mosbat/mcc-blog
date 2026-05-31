@@ -6,17 +6,17 @@
     <description>Recent content in Saas on Mousa Cloud Consulting Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <copyright>© 2026 Mousa Cloud Consulting</copyright>
-    <lastBuildDate>Fri, 15 May 2026 05:27:00 +0200</lastBuildDate><atom:link href="http://localhost:1313/mcc-blog/tags/saas/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>© 2026 Mousa Al Bateh</copyright>
+    <lastBuildDate>Thu, 14 May 2026 00:53:00 +0200</lastBuildDate><atom:link href="http://localhost:1313/mcc-blog/tags/saas/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>S3 Misconfiguration Still Top Risk in 2026: Case Study and Fixes for SaaS Providers</title>
-      <link>http://localhost:1313/mcc-blog/case-studies/s3-case-study/</link>
-      <pubDate>Fri, 15 May 2026 05:27:00 +0200</pubDate>
+      <title>How I&#39;d Help a Messy Mid SaaS Company Pass Audit Without Slowing Performance</title>
+      <link>http://localhost:1313/mcc-blog/case-studies/how-id-help-a-messy-mid-saas-company-pass-audit-without-slowing-performance/</link>
+      <pubDate>Thu, 14 May 2026 00:53:00 +0200</pubDate>
       
-      <guid>http://localhost:1313/mcc-blog/case-studies/s3-case-study/</guid>
-      <description>A hypothetical AWS case study on S3 public exposure, EU data residency gaps, and a phased remediation approach using presigned URLs, regional buckets, replication, versioning, and object lock.</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/mcc-blog/case-studies/s3-case-study/featured.png" />
+      <guid>http://localhost:1313/mcc-blog/case-studies/how-id-help-a-messy-mid-saas-company-pass-audit-without-slowing-performance/</guid>
+      <description>A hypothetical engagement showing how a growing SaaS company could improve audit readiness, tighten AWS access controls, migrate away from risky database patterns, and reduce operational drag without slowing performance.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/mcc-blog/case-studies/how-id-help-a-messy-mid-saas-company-pass-audit-without-slowing-performance/featured.png" />
     </item>
     
   </channel>

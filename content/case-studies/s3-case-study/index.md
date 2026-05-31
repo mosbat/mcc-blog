@@ -1,16 +1,26 @@
 +++
-title = "S3 Misconfiguration Still Top Risk in 2026: Case Study and Fixes for SaaS Providers"
-date = 2026-05-15T05:27:00+02:00
-draft = false
-description = "A hypothetical case study showing how an S3 misconfiguration, public object exposure, and US-only storage created security and GDPR risks for a SaaS provider, and how to remediate them."
-summary = "A hypothetical AWS case study on S3 public exposure, EU data residency gaps, and a phased remediation approach using presigned URLs, regional buckets, replication, versioning, and object lock."
-tags = ["aws", "amazon-s3", "cloud-security", "gdpr", "data-residency", "pci", "saas", "incident-response"]
-categories = ["aws", "security-architecture", "compliance"]
+title = "S3 Misconfiguration Still Top Risk in 2026"
+date = 2026-05-15T21:19:00+02:00
+lastmod = 2026-05-15T21:19:00+02:00
+description = "A hypothetical case study on how S3 misconfiguration can expose SaaS providers to data exposure, GDPR risk, and costly remediation work."
+summary = "A practical AWS case study showing how public S3 object access, weak regional data design, and missing safeguards can create both security and compliance problems for SaaS providers."
+slug = "s3-misconfiguration-still-top-risk-in-2026"
+tags = ["aws", "s3", "cloud-security", "gdpr", "data-residency", "security-architecture", "incident-response", "compliance"]
+categories = ["aws", "cloud-security", "compliance"]
 authors = ["mousa"]
+draft = false
 showTableOfContents = true
 showTaxonomies = true
 showWordCount = true
 showReadingTime = true
+showDate = true
+showDateUpdated = true
+showAuthor = true
+showBreadcrumbs = true
+showHeadingAnchors = true
+showPagination = true
+showSummary = true
+sharingLinks = ["email","reddit","telegram","twitter","linkedin"]
 +++
 
 > [!NOTE]Disclaimer:
@@ -96,7 +106,7 @@ With the above changes implemented, it will have the following wins:
 • By having S3 bucket per region, we would be able to dynamically configure each bucket to be in compliance with the given region such as respecting data retention requirements.
 • This design makes it also easy to onboard other regions.
 
-> [!NOTE]Bonus:
+> [!TIP]Bonus:
 >Since data retention and compliance requires enabling versioning by default in S3, this also hardens the security posture because with proper versioning and object locking, this dramatically reduces the risk of ransomware threats.
 
 ## How I can help

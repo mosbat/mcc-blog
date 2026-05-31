@@ -90,6 +90,15 @@
   
   
     
+      
+      
+        
+      
+      
+        <meta name="twitter:image" content="http://localhost:1313/mcc-blog/images/logo.jpg">
+        <meta property="og:image" content="http://localhost:1313/mcc-blog/images/logo.jpg">
+      
+    
   
 
   
@@ -288,6 +297,22 @@
 
   
   
+    <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){ dataLayer.push(arguments); }
+  window.gtag = gtag;
+
+  gtag('consent', 'default', {
+    analytics_storage: 'denied',
+    ad_storage: 'denied',
+    ad_user_data: 'denied',
+    ad_personalization: 'denied',
+    wait_for_update: 2000
+  });
+
+
+</script>
+  
 
   
   
@@ -301,6 +326,10 @@
 
 
 
+
+  
+    
+  
 
 
 
@@ -918,15 +947,19 @@
   
   
   
-    <div id="consent-banner" style="display:none;position:fixed;left:1rem;right:1rem;bottom:1rem;z-index:9999;max-width:760px;margin:auto;background:#111827;color:#f9fafb;padding:1rem 1.25rem;border-radius:14px;box-shadow:0 12px 32px rgba(0,0,0,.28);">
+    <div id="consent-banner"
+  style="display:none;position:fixed;left:1rem;right:1rem;bottom:1rem;z-index:9999;max-width:760px;margin:auto;background:#111827;color:#f9fafb;padding:1rem 1.25rem;border-radius:14px;box-shadow:0 12px 32px rgba(0,0,0,.28);">
   <p style="margin:0 0 .85rem 0;line-height:1.5;">
-    This site uses analytics to understand traffic and improve content. Views and likes rely on Firebase, but analytics will only be enabled if you accept.
+    This site uses cookies and similar technologies for analytics and to enable views and likes. These features rely on
+    Firebase and will remain disabled unless you give consent.
   </p>
   <div style="display:flex;gap:.75rem;flex-wrap:wrap;">
-    <button id="consent-accept" style="border:0;border-radius:10px;padding:.65rem 1rem;background:#f9fafb;color:#111827;cursor:pointer;">
+    <button id="consent-accept"
+      style="border:0;border-radius:10px;padding:.65rem 1rem;background:#f9fafb;color:#111827;cursor:pointer;">
       Accept analytics
     </button>
-    <button id="consent-decline" style="border:1px solid #6b7280;border-radius:10px;padding:.65rem 1rem;background:transparent;color:#f9fafb;cursor:pointer;">
+    <button id="consent-decline"
+      style="border:1px solid #6b7280;border-radius:10px;padding:.65rem 1rem;background:transparent;color:#f9fafb;cursor:pointer;">
       Decline
     </button>
   </div>
@@ -945,6 +978,7 @@
     document.getElementById("consent-accept")?.addEventListener("click", function () {
       localStorage.setItem(KEY, "accepted");
       banner.style.display = "none";
+
       window.dispatchEvent(new Event("consent-granted"));
     });
 

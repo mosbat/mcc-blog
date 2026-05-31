@@ -1,0 +1,43 @@
+{{- $src := .Get "src" -}}
+{{- if not $src -}}
+  {{- errorf "video-hls shortcode requires src" -}}
+{{- end -}}
+
+{{- $poster := .Get "poster" -}}
+{{- $title := .Get "title" | default "" -}}
+{{- $id := printf "hls-video-%d" now.UnixNano -}}
+
+<figure class="my-8">
+  <video
+    id="{{ $id }}"
+    controls
+    preload="metadata"
+    playsinline
+    style="width:100%; max-width:900px; height:auto; border-radius:12px;"
+    {{ with $poster }}poster="{{ . }}"{{ end }}
+  ></video>
+
+  {{ with $title }}
+    <figcaption class="mt-2 text-sm opacity-80">{{ . }}</figcaption>
+  {{ end }}
+</figure>
+
+<script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+<script>
+(function() {
+  const video = document.getElementById('{{ $id }}');
+  const src = '{{ $src }}';
+
+  if (video.canPlayType('application/vnd.apple.mpegurl')) {
+    video.src = src;
+  } else if (window.Hls && Hls.isSupported()) {
+    const hls = new Hls();
+    hls.loadSource(src);
+    hls.attachMedia(video);
+  } else {
+    const msg = document.createElement('p');
+    msg.textContent = 'Your browser does not support HLS playback.';
+    video.replaceWith(msg);
+  }
+})();
+</script>

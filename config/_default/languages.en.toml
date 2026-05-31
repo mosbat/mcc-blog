@@ -3,7 +3,7 @@ locale = "en"
 label = "English"
 languageName = "English"
 weight = 1
-title = "Mousa Cloud Consulting Blog | Cloud Security Expert"
+title = "Mousa Cloud Consulting Blog"
 
 [params]
   displayName = "EN"

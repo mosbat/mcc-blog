@@ -3,7 +3,7 @@ locale = "en"
 label = "English"
 languageName = "English"
 weight = 1
-title = "Mousa Cloud Consulting Blog"
+title = "Mousa Cloud Consulting Blog | Cloud Security Expert"
 
 [params]
   displayName = "EN"
@@ -12,7 +12,7 @@ title = "Mousa Cloud Consulting Blog"
   dateFormat = "2 January 2006"
   logo = "images/logo.jpg"
   # secondaryLogo = "img/secondary-logo.png"
-  description = "Mousa Cloud Consulting Ltd"
+  description = "Blog covering cloud security architecture, AWS security services, and cybersecurity certifications. Practical insights from a solo cloud security consultant."
   # copyright = "Copy, _right?_ :thinking_face:"
 
 [params.author]

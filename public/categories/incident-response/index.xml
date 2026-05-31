@@ -16,7 +16,7 @@
       
       <guid>http://localhost:1313/mcc-blog/case-studies/why-turning-on-aws-guardduty-is-not-enough/</guid>
       <description>A mid-sized SaaS company had AWS GuardDuty enabled, but an old unresolved alert exposed a deeper gap in cloud monitoring and incident response readiness.</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/mcc-blog/case-studies/why-turning-on-aws-guardduty-is-not-enough/featured.webp" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/mcc-blog/case-studies/why-turning-on-aws-guardduty-is-not-enough/featured-og.webp" />
     </item>
     
   </channel>

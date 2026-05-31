@@ -16,7 +16,7 @@
       
       <guid>http://localhost:1313/mcc-blog/case-studies/how-id-help-a-messy-mid-saas-company-pass-audit-without-slowing-performance/</guid>
       <description>A hypothetical engagement showing how a growing SaaS company could improve audit readiness, tighten AWS access controls, migrate away from risky database patterns, and reduce operational drag without slowing performance.</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/mcc-blog/case-studies/how-id-help-a-messy-mid-saas-company-pass-audit-without-slowing-performance/featured.webp" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/mcc-blog/case-studies/how-id-help-a-messy-mid-saas-company-pass-audit-without-slowing-performance/featured-og.webp" />
     </item>
     
   </channel>

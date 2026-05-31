@@ -1,0 +1,13 @@
+# Generated files by Hugo
+/public/
+/resources/
+_gen
+
+# Temporary lock file
+.hugo_build.lock
+
+# OS/filesystem artifacts
+.DS_Store
+
+# Intellij IDEA directory (if used)
+/.idea/

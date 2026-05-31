@@ -388,7 +388,7 @@ We would get here the following wins:
 
 After those specific improvements, our architecture now looks like this:
 
-![Architecture AWS After](featured.png)
+![Architecture AWS After](featured.webp)
 
 ### Phase 4: Assure: Evidence and Continuous Compliance
 

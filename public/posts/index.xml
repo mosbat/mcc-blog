@@ -16,7 +16,7 @@
       
       <guid>http://localhost:1313/mcc-blog/posts/blog-created/</guid>
       <description>Mousa Cloud Consulting has launched its blog to share practical insights on cloud security, cybersecurity, and AI governance.</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/mcc-blog/posts/blog-created/featured.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/mcc-blog/posts/blog-created/featured.webp" />
     </item>
     
   </channel>

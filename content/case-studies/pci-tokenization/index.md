@@ -33,7 +33,7 @@ In practice, there are nowadays many providers such as Alipay, Google Pay, Samsu
 
 When a payer performs a transaction (using a terminal), the device transmits the DPAN (Device Primary Account Number), usually via NFC, along with other metadata over a protected channel to the Token Service Provider (TSP). On the provider’s side, the backend will de-tokenize the DPAN and forward a payment request to the issuing bank. Once the issuing bank authorizes the payment, a response is sent back to the merchant containing the tokenized transaction information which can be used for accounting purposes or handling disputes.
 
-![PCI tokenization flow](featured.png)
+![PCI tokenization flow](featured.webp)
 
 Throughout the process, the merchant never has to collect or store sensitive information such as credit card numbers which significantly reduces compliance friction as well as overall costs. 
 

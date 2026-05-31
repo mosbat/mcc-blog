@@ -16,7 +16,7 @@
       
       <guid>http://localhost:1313/mcc-blog/case-studies/how-tokenization-reduces-merchants-pci-scope/</guid>
       <description>A practical explanation of how tokenization reduces merchants’ PCI scope by limiting cardholder data exposure and shifting sensitive payment handling away from merchant systems.</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/mcc-blog/case-studies/how-tokenization-reduces-merchants-pci-scope/featured.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/mcc-blog/case-studies/how-tokenization-reduces-merchants-pci-scope/featured.webp" />
     </item>
     
   </channel>

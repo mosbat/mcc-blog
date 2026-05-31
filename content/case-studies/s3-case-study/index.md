@@ -73,7 +73,7 @@ The backend can simply change the destination bucket depending on customer’s l
 In regards to customers needing to have access to their data and request deletion, this can be a feature useful regardless of the region.
 Therefore, our new design would look like below:
 
-![S3 Architecture](featured.png)
+![S3 Architecture](featured.webp)
 
 This way, whenever a change in regulations happen in regards to data retention for example, or needing to place a legal hold on certain customer’s objects, this becomes more dynamic than before.
 

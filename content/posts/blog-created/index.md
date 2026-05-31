@@ -9,7 +9,7 @@ showWordCount = true
 showTaxonomies = true
 +++
 
-![Blog Launched](featured.png)
+![Blog Launched](featured.webp)
 
 ## Blog Launched
 

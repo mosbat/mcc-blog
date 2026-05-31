@@ -104,7 +104,7 @@ First and foremost, the company needs to have a policy in place regarding their 
 
 A concrete design for monitoring AWS in our case would look like this:
 
-![Intelligent Monitoring Alerting & Escalation with AWS](featured.png)
+![Intelligent Monitoring Alerting & Escalation with AWS](featured.webp)
 
 ### Execute
 

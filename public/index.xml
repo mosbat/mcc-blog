@@ -16,7 +16,7 @@
       
       <guid>http://localhost:1313/mcc-blog/case-studies/why-turning-on-aws-guardduty-is-not-enough/</guid>
       <description>A mid-sized SaaS company had AWS GuardDuty enabled, but an old unresolved alert exposed a deeper gap in cloud monitoring and incident response readiness.</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/mcc-blog/case-studies/why-turning-on-aws-guardduty-is-not-enough/featured.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/mcc-blog/case-studies/why-turning-on-aws-guardduty-is-not-enough/featured.webp" />
     </item>
     
     <item>
@@ -26,7 +26,7 @@
       
       <guid>http://localhost:1313/mcc-blog/case-studies/s3-misconfiguration-still-top-risk-in-2026/</guid>
       <description>A practical AWS case study showing how public S3 object access, weak regional data design, and missing safeguards can create both security and compliance problems for SaaS providers.</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/mcc-blog/case-studies/s3-misconfiguration-still-top-risk-in-2026/featured.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/mcc-blog/case-studies/s3-misconfiguration-still-top-risk-in-2026/featured.webp" />
     </item>
     
     <item>
@@ -36,7 +36,7 @@
       
       <guid>http://localhost:1313/mcc-blog/case-studies/how-id-help-a-messy-mid-saas-company-pass-audit-without-slowing-performance/</guid>
       <description>A hypothetical engagement showing how a growing SaaS company could improve audit readiness, tighten AWS access controls, migrate away from risky database patterns, and reduce operational drag without slowing performance.</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/mcc-blog/case-studies/how-id-help-a-messy-mid-saas-company-pass-audit-without-slowing-performance/featured.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/mcc-blog/case-studies/how-id-help-a-messy-mid-saas-company-pass-audit-without-slowing-performance/featured.webp" />
     </item>
     
     <item>
@@ -46,7 +46,7 @@
       
       <guid>http://localhost:1313/mcc-blog/case-studies/how-tokenization-reduces-merchants-pci-scope/</guid>
       <description>A practical explanation of how tokenization reduces merchants’ PCI scope by limiting cardholder data exposure and shifting sensitive payment handling away from merchant systems.</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/mcc-blog/case-studies/how-tokenization-reduces-merchants-pci-scope/featured.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/mcc-blog/case-studies/how-tokenization-reduces-merchants-pci-scope/featured.webp" />
     </item>
     
     <item>
@@ -56,7 +56,7 @@
       
       <guid>http://localhost:1313/mcc-blog/posts/blog-created/</guid>
       <description>Mousa Cloud Consulting has launched its blog to share practical insights on cloud security, cybersecurity, and AI governance.</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/mcc-blog/posts/blog-created/featured.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/mcc-blog/posts/blog-created/featured.webp" />
     </item>
     
   </channel>

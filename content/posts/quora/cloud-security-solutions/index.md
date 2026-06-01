@@ -11,12 +11,13 @@ tags = ["Quora", "Cloud Security", "Cybersecurity", "AWS", "Compliance", "Busine
 categories = ["Quora Answers", "Cloud Security"]
 sharingLinks = ["email","reddit","telegram","twitter","linkedin"]
 sourceUrl = "https://www.quora.com/What-are-the-best-cloud-security-solutions-for-businesses"
+source = "Quora"
 +++
 
 ![Cloud Security](featured-og.webp)
 
->[!NOTE]This is an answer to a question asked on Quora about the best cloud security solutions for businesses. The original question was asked on below thread.
->https://www.quora.com/What-are-the-best-cloud-security-solutions-for-businesses
+>[!NOTE]
+> {{< source-url >}}
 
 You have to think of cloud as your IT infrastructure but it's on the "Cloud". 
 

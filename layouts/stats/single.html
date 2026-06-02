@@ -29,7 +29,7 @@
     <section class="rounded-2xl border p-4">
         <div class="mb-4 flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
             <h2 class="text-xl font-semibold">Post stats</h2>
-            <input id="stats-search" type="search" placeholder="Filter by title or key"
+            <input id="stats-search" type="search" placeholder="Filter by key"
                 class="w-full rounded-xl border px-3 py-2 md:w-80" aria-label="Filter stats">
         </div>
 
@@ -53,15 +53,54 @@
             </table>
         </div>
     </section>
+
+    <section class="mt-8 rounded-2xl border p-4">
+        <div class="mb-4">
+            <h2 class="text-xl font-semibold">Last 30 days</h2>
+            <p class="mt-1 text-sm opacity-75">Daily views and likes across tracked pages.</p>
+        </div>
+
+        <div id="timeline-status" class="mb-4 text-sm opacity-75">Loading timeline…</div>
+
+        <div class="h-[320px]">
+            <canvas id="stats-timeline-chart"></canvas>
+        </div>
+    </section>
 </article>
 
 <script type="module">
     import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
     import { getAuth, signInAnonymously } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
-    import { getFirestore, collection, getDocs } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
+    import {
+        getFirestore,
+        collection,
+        getDocs,
+        query,
+        where
+    } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
 
-    const CURRENT_STATS_PATH = "{{ .RelPermalink }}";
-    const CURRENT_STATS_KEY = normalizeKey(CURRENT_STATS_PATH);
+    import {
+        Chart,
+        LineController,
+        LineElement,
+        PointElement,
+        LinearScale,
+        CategoryScale,
+        Tooltip,
+        Legend,
+        Filler
+    } from "https://cdn.jsdelivr.net/npm/chart.js@4.4.3/+esm";
+
+    Chart.register(
+        LineController,
+        LineElement,
+        PointElement,
+        LinearScale,
+        CategoryScale,
+        Tooltip,
+        Legend,
+        Filler
+    );
 
     const totalViewsEl = document.getElementById("total-views");
     const totalLikesEl = document.getElementById("total-likes");
@@ -70,6 +109,10 @@
     const statsStatusEl = document.getElementById("stats-status");
     const statsBodyEl = document.getElementById("stats-body");
     const statsSearchEl = document.getElementById("stats-search");
+    const timelineStatusEl = document.getElementById("timeline-status");
+    const chartCanvas = document.getElementById("stats-timeline-chart");
+
+    let timelineChart = null;
 
     function normalizeKey(value) {
         let v = String(value || "").trim().toLowerCase();
@@ -81,9 +124,20 @@
         v = v.replace(/\/index$/, "");
         v = v.replace(/\.md$/, "");
         v = v.replace(/^content\//, "");
+        v = v.replace(/^-+|-+$/g, "");
 
         return v;
     }
+
+    const CURRENT_STATS_KEY = normalizeKey("{{ .RelPermalink }}");
+
+    const EXCLUDED_KEYS = new Set([
+        CURRENT_STATS_KEY,
+        "stats",
+        "stats-index",
+        "home",
+        "term_news"
+    ]);
 
     function formatNumber(value) {
         return new Intl.NumberFormat().format(Number(value || 0));
@@ -132,7 +186,7 @@
         }
 
         return Array.from(rows.values())
-            .filter((row) => row.key !== CURRENT_STATS_KEY && row.key !== "stats-index" && row.key !== "stats")
+            .filter((row) => !EXCLUDED_KEYS.has(row.key))
             .sort((a, b) => b.views - a.views || b.likes - a.likes || a.key.localeCompare(b.key));
     }
 
@@ -170,6 +224,161 @@
     `).join("");
     }
 
+    /*     function formatDateKey(date) {
+            return date.toISOString().slice(0, 10);
+        } */
+
+    function formatUTCDateKey(date) {
+        const year = date.getUTCFullYear();
+        const month = String(date.getUTCMonth() + 1).padStart(2, "0");
+        const day = String(date.getUTCDate()).padStart(2, "0");
+        return `${year}-${month}-${day}`;
+    }
+
+    function getLastNDatesUTC(count) {
+        const dates = [];
+        const now = new Date();
+        const todayUTC = new Date(Date.UTC(
+            now.getUTCFullYear(),
+            now.getUTCMonth(),
+            now.getUTCDate(),
+            0, 0, 0, 0
+        ));
+
+        const start = new Date(todayUTC);
+        start.setUTCDate(todayUTC.getUTCDate() - (count - 1));
+
+        for (let d = new Date(start); d <= todayUTC; d.setUTCDate(d.getUTCDate() + 1)) {
+            dates.push(formatUTCDateKey(new Date(d)));
+        }
+
+        return dates;
+    }
+
+    function buildDailySeries(dateKeys, docs, valueField) {
+        const totals = new Map(dateKeys.map((date) => [date, 0]));
+
+        for (const docSnap of docs) {
+            const data = docSnap.data() || {};
+            const date = data.date;
+            const key = normalizeKey(data.key || "");
+            const value = Number(data[valueField] || 0);
+
+            if (!date || EXCLUDED_KEYS.has(key)) continue;
+
+            if (totals.has(date)) {
+                totals.set(date, totals.get(date) + value);
+            }
+        }
+
+        return dateKeys.map((date) => totals.get(date) || 0);
+    }
+
+    function renderTimelineChart(labels, viewsData, likesData) {
+        if (!chartCanvas) return;
+
+        if (timelineChart) {
+            timelineChart.destroy();
+        }
+
+        timelineChart = new Chart(chartCanvas, {
+            type: "line",
+            data: {
+                labels,
+                datasets: [
+                    {
+                        label: "Views",
+                        data: viewsData,
+                        borderColor: "#0f766e",
+                        backgroundColor: "rgba(15, 118, 110, 0.12)",
+                        fill: true,
+                        tension: 0.3,
+                        pointRadius: 3,
+                        pointHoverRadius: 5
+                    },
+                    {
+                        label: "Likes",
+                        data: likesData,
+                        borderColor: "#a21caf",
+                        backgroundColor: "rgba(162, 28, 175, 0.10)",
+                        fill: true,
+                        tension: 0.3,
+                        pointRadius: 3,
+                        pointHoverRadius: 5
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                interaction: {
+                    mode: "index",
+                    intersect: false
+                },
+                plugins: {
+                    legend: {
+                        display: true,
+                        position: "top"
+                    },
+                    tooltip: {
+                        enabled: true
+                    }
+                },
+                scales: {
+                    x: {
+                        grid: {
+                            display: false
+                        }
+                    },
+                    y: {
+                        beginAtZero: true,
+                        ticks: {
+                            precision: 0
+                        }
+                    }
+                }
+            }
+        });
+    }
+
+    function shortUTCDateLabel(dateStr) {
+        return `${dateStr} UTC`;
+    }
+
+    async function loadTimeline(db) {
+        try {
+            timelineStatusEl.textContent = "Loading timeline…";
+
+            const dateKeys = getLastNDatesUTC(30);
+            const startDate = dateKeys[0];
+
+            const viewsDailyQuery = query(
+                collection(db, "views_daily"),
+                where("date", ">=", startDate)
+            );
+
+            const likesDailyQuery = query(
+                collection(db, "likes_daily"),
+                where("date", ">=", startDate)
+            );
+
+            const [viewsDailySnapshot, likesDailySnapshot] = await Promise.all([
+                getDocs(viewsDailyQuery),
+                getDocs(likesDailyQuery)
+            ]);
+
+            const viewSeries = buildDailySeries(dateKeys, viewsDailySnapshot.docs, "views");
+            const likeSeries = buildDailySeries(dateKeys, likesDailySnapshot.docs, "likes");
+            const labels = dateKeys.map(shortUTCDateLabel);
+
+            renderTimelineChart(labels, viewSeries, likeSeries);
+            timelineStatusEl.textContent = "Showing last 30 days.";
+        } catch (error) {
+            console.error(error);
+            timelineStatusEl.textContent = "Failed to load timeline.";
+        }
+    }
+
     async function loadStats() {
         try {
             statsStatusEl.textContent = "Connecting to Firebase…";
@@ -191,11 +400,11 @@
 
             renderSummary(rows);
             renderRows(rows);
-
             statsStatusEl.textContent = `Loaded ${rows.length} rows.`;
 
             statsSearchEl.addEventListener("input", () => {
                 const q = normalizeKey(statsSearchEl.value);
+
                 if (!q) {
                     renderRows(rows);
                     return;
@@ -204,6 +413,8 @@
                 const filtered = rows.filter((row) => normalizeKey(row.key).includes(q));
                 renderRows(filtered);
             });
+
+            await loadTimeline(db);
         } catch (error) {
             console.error(error);
             statsStatusEl.textContent = "Failed to load stats. Check Firebase config, auth, and Firestore rules.";
@@ -214,6 +425,7 @@
           </td>
         </tr>
       `;
+            timelineStatusEl.textContent = "Timeline unavailable because stats failed to load.";
         }
     }
 

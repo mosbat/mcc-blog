@@ -1,0 +1,222 @@
+{{ define "main" }}
+<article class="mx-auto max-w-6xl px-4 py-10">
+    <header class="mb-8">
+        <h1 class="text-3xl font-bold">{{ .Title }}</h1>
+        {{ with .Description }}
+        <p class="mt-2 text-base opacity-80">{{ . }}</p>
+        {{ end }}
+    </header>
+
+    <section class="mb-8 grid gap-4 md:grid-cols-4">
+        <div class="rounded-2xl border px-4 py-4">
+            <div class="text-sm opacity-70">Total views</div>
+            <div id="total-views" class="mt-1 text-3xl font-bold">—</div>
+        </div>
+        <div class="rounded-2xl border px-4 py-4">
+            <div class="text-sm opacity-70">Total likes</div>
+            <div id="total-likes" class="mt-1 text-3xl font-bold">—</div>
+        </div>
+        <div class="rounded-2xl border px-4 py-4">
+            <div class="text-sm opacity-70">Tracked posts</div>
+            <div id="tracked-posts" class="mt-1 text-3xl font-bold">—</div>
+        </div>
+        <div class="rounded-2xl border px-4 py-4">
+            <div class="text-sm opacity-70">Likes / views</div>
+            <div id="engagement-rate" class="mt-1 text-3xl font-bold">—</div>
+        </div>
+    </section>
+
+    <section class="rounded-2xl border p-4">
+        <div class="mb-4 flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
+            <h2 class="text-xl font-semibold">Post stats</h2>
+            <input id="stats-search" type="search" placeholder="Filter by title or key"
+                class="w-full rounded-xl border px-3 py-2 md:w-80" aria-label="Filter stats">
+        </div>
+
+        <div id="stats-status" class="mb-4 text-sm opacity-75">Loading stats…</div>
+
+        <div class="overflow-x-auto">
+            <table class="w-full border-collapse text-sm" id="stats-table">
+                <thead>
+                    <tr class="border-b text-left">
+                        <th class="px-3 py-3">Post</th>
+                        <th class="px-3 py-3">Key</th>
+                        <th class="px-3 py-3">Views</th>
+                        <th class="px-3 py-3">Likes</th>
+                    </tr>
+                </thead>
+                <tbody id="stats-body">
+                    <tr>
+                        <td colspan="5" class="px-3 py-6 opacity-70">Loading…</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+</article>
+
+<script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+    import { getAuth, signInAnonymously } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
+    import { getFirestore, collection, getDocs } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
+
+    const CURRENT_STATS_PATH = "{{ .RelPermalink }}";
+    const CURRENT_STATS_KEY = normalizeKey(CURRENT_STATS_PATH);
+
+    const totalViewsEl = document.getElementById("total-views");
+    const totalLikesEl = document.getElementById("total-likes");
+    const trackedPostsEl = document.getElementById("tracked-posts");
+    const engagementRateEl = document.getElementById("engagement-rate");
+    const statsStatusEl = document.getElementById("stats-status");
+    const statsBodyEl = document.getElementById("stats-body");
+    const statsSearchEl = document.getElementById("stats-search");
+
+    function normalizeKey(value) {
+        let v = String(value || "").trim().toLowerCase();
+
+        v = v.replace(/^https?:\/\/[^/]+/i, "");
+        v = v.replace(/^\/+|\/+$/g, "");
+        v = v.replace(/^views_/, "");
+        v = v.replace(/^likes_/, "");
+        v = v.replace(/\/index$/, "");
+        v = v.replace(/\.md$/, "");
+        v = v.replace(/^content\//, "");
+
+        return v;
+    }
+
+    function formatNumber(value) {
+        return new Intl.NumberFormat().format(Number(value || 0));
+    }
+
+    function escapeHtml(value) {
+        return String(value ?? "")
+            .replaceAll("&", "&amp;")
+            .replaceAll("<", "&lt;")
+            .replaceAll(">", "&gt;")
+            .replaceAll('"', "&quot;")
+            .replaceAll("'", "&#039;");
+    }
+
+    function getFirebaseConfig() {
+        return {
+            apiKey: "{{ site.Params.firebase.apiKey }}",
+            authDomain: "{{ site.Params.firebase.authDomain }}",
+            projectId: "{{ site.Params.firebase.projectId }}",
+            storageBucket: "{{ site.Params.firebase.storageBucket }}",
+            messagingSenderId: "{{ site.Params.firebase.messagingSenderId }}",
+            appId: "{{ site.Params.firebase.appId }}",
+            measurementId: "{{ site.Params.firebase.measurementId }}"
+        };
+    }
+
+    function mergeCounts(viewDocs, likeDocs) {
+        const rows = new Map();
+
+        for (const doc of viewDocs) {
+            const key = normalizeKey(doc.id);
+            if (!key) continue;
+
+            const row = rows.get(key) || { key, views: 0, likes: 0 };
+            row.views = Number(doc.data()?.views || 0);
+            rows.set(key, row);
+        }
+
+        for (const doc of likeDocs) {
+            const key = normalizeKey(doc.id);
+            if (!key) continue;
+
+            const row = rows.get(key) || { key, views: 0, likes: 0 };
+            row.likes = Number(doc.data()?.likes || 0);
+            rows.set(key, row);
+        }
+
+        return Array.from(rows.values())
+            .filter((row) => row.key !== CURRENT_STATS_KEY && row.key !== "stats-index" && row.key !== "stats")
+            .sort((a, b) => b.views - a.views || b.likes - a.likes || a.key.localeCompare(b.key));
+    }
+
+    function renderSummary(rows) {
+        const totalViews = rows.reduce((sum, row) => sum + row.views, 0);
+        const totalLikes = rows.reduce((sum, row) => sum + row.likes, 0);
+        const trackedPosts = rows.length;
+        const engagementRate = totalViews > 0
+            ? ((totalLikes / totalViews) * 100).toFixed(2) + "%"
+            : "0%";
+
+        totalViewsEl.textContent = formatNumber(totalViews);
+        totalLikesEl.textContent = formatNumber(totalLikes);
+        trackedPostsEl.textContent = formatNumber(trackedPosts);
+        engagementRateEl.textContent = engagementRate;
+    }
+
+    function renderRows(rows) {
+        if (!rows.length) {
+            statsBodyEl.innerHTML = `
+        <tr>
+          <td colspan="5" class="px-3 py-6 opacity-70">No stats found.</td>
+        </tr>
+      `;
+            return;
+        }
+
+        statsBodyEl.innerHTML = rows.map((row) => `
+      <tr class="border-b align-top">
+        <td class="px-3 py-3">${escapeHtml(row.key)}</td>
+        <td class="px-3 py-3"><code>${escapeHtml(row.key)}</code></td>
+        <td class="px-3 py-3">${formatNumber(row.views)}</td>
+        <td class="px-3 py-3">${formatNumber(row.likes)}</td>
+      </tr>
+    `).join("");
+    }
+
+    async function loadStats() {
+        try {
+            statsStatusEl.textContent = "Connecting to Firebase…";
+
+            const app = initializeApp(getFirebaseConfig());
+            const auth = getAuth(app);
+            const db = getFirestore(app);
+
+            await signInAnonymously(auth);
+
+            statsStatusEl.textContent = "Loading views and likes…";
+
+            const [viewsSnapshot, likesSnapshot] = await Promise.all([
+                getDocs(collection(db, "views")),
+                getDocs(collection(db, "likes"))
+            ]);
+
+            const rows = mergeCounts(viewsSnapshot.docs, likesSnapshot.docs);
+
+            renderSummary(rows);
+            renderRows(rows);
+
+            statsStatusEl.textContent = `Loaded ${rows.length} rows.`;
+
+            statsSearchEl.addEventListener("input", () => {
+                const q = normalizeKey(statsSearchEl.value);
+                if (!q) {
+                    renderRows(rows);
+                    return;
+                }
+
+                const filtered = rows.filter((row) => normalizeKey(row.key).includes(q));
+                renderRows(filtered);
+            });
+        } catch (error) {
+            console.error(error);
+            statsStatusEl.textContent = "Failed to load stats. Check Firebase config, auth, and Firestore rules.";
+            statsBodyEl.innerHTML = `
+        <tr>
+          <td colspan="5" class="px-3 py-6 text-red-600 dark:text-red-400">
+            Error loading stats.
+          </td>
+        </tr>
+      `;
+        }
+    }
+
+    loadStats();
+</script>
+{{ end }}

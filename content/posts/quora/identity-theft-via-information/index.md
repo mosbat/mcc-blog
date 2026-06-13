@@ -15,6 +15,8 @@ source = "Quora"
 sourceUrl = "https://www.quora.com/What-information-has-to-be-compromised-in-order-for-my-identity-to-be-stolen"
 +++
 
+> {{< authorship-badge label="Human-authored analysis; AI used for formatting and proofreading" tone="mixed" icon="shield-check" >}}
+
 ![Identity theft in the dark web](featured-og.webp)
 
 >[!NOTE]

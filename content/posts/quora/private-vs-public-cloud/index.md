@@ -15,6 +15,8 @@ source = "Quora"
 sourceUrl = "https://www.quora.com/What-are-the-advantages-of-using-a-private-cloud-over-a-public-cloud-for-a-companys-data-center-or-server-environment"
 +++
 
+> {{< authorship-badge label="Human-authored analysis; AI used for formatting and proofreading" tone="mixed" icon="shield-check" >}}
+
 ![Cloud Security](featured-og.webp)
 
 >[!NOTE]

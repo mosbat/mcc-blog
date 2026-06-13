@@ -14,6 +14,8 @@ sourceUrl = "https://www.quora.com/unanswered/What-typical-vulnerabilities-do-AW
 source = "Quora"
 +++
 
+> {{< authorship-badge label="Human-authored analysis; AI used for formatting and proofreading" tone="mixed" icon="shield-check" >}}
+
 ![S3 Vulnerabilities](featured-og.webp)
 
 >[!NOTE]

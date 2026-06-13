@@ -13,6 +13,8 @@ sharingLinks = ["email", "reddit", "telegram", "twitter", "linkedin"]
 showTableOfContents = true
 +++
 
+> {{< authorship-badge label="Human-authored analysis; AI used for formatting and proofreading" tone="mixed" icon="shield-check" >}}
+
 ![Organizations still catching up with passwordless](featured-og.webp)
 
 According to a [2024 study by Ponemon-Sullivan Privacy Report](https://ponemonsullivanreport.com/2024/11/the-2024-study-on-the-state-of-identity-and-access-management-iam-security/), it was found that around 76% of organizations surveyed in the US haven't adopted passwordless yet.

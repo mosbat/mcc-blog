@@ -23,6 +23,8 @@ showSummary = true
 sharingLinks = ["email","reddit","telegram","twitter","linkedin"]
 +++
 
+> {{< authorship-badge label="Human-authored analysis; AI used for formatting and proofreading" tone="mixed" icon="shield-check" >}}
+
 > [!NOTE]Disclaimer:
 >This is a case scenario based on common real SaaS environments, not a
 >single specific client. It shows how I would approach an engagement with

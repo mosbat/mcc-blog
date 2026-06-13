@@ -23,6 +23,8 @@ showSummary = true
 sharingLinks = ["email","reddit","telegram","twitter","linkedin"]
 +++
 
+> {{< authorship-badge label="Human-authored analysis; AI used for formatting and proofreading" tone="mixed" icon="shield-check" >}}
+
 Tokenization is the process of replacing sensitive data (PII, financial, etc…) with a token.
 
 Tokens are generated using secure random generators so it is extremely difficult for an attacker to steal a token and reverse engineer it unless the random generator at the TSP side has a major vulnerability or misconfigured. Please note that token generation methods vary by TSP.

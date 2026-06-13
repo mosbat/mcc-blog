@@ -15,6 +15,8 @@ source = "Quora"
 sourceUrl = "https://www.quora.com/unanswered/What-are-your-reactions-to-Microsofts-potential-exclusionary-behavior-in-its-Azure-cloud-services-and-its-role-in-the-AI-industry"
 +++
 
+> {{< authorship-badge label="Human-authored analysis; AI used for formatting and proofreading" tone="mixed" icon="shield-check" >}}
+
 ![Microsoft under investigation](featured-og.webp) 
 
 >[!NOTE]

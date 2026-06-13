@@ -14,6 +14,8 @@ sourceUrl = "https://www.quora.com/How-important-is-it-for-cybersecurity-product
 source = "Quora"
 +++
 
+> {{< authorship-badge label="Human-authored analysis; AI used for formatting and proofreading" tone="mixed" icon="shield-check" >}}
+
 ![Cybersecurity product integrations](featured-og.webp) 
 
 >[!NOTE]

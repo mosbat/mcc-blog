@@ -1,0 +1,26 @@
+{{- $label := .Get "label" | default "Human-authored" -}}
+{{- $tone := .Get "tone" | default "neutral" -}}
+{{- $icon := .Get "icon" | default "shield-check" -}}
+{{- $title := .Get "title" | default "Content authorship disclosure" -}}
+
+<span
+  class="authorship-badge authorship-badge--{{ $tone }}"
+  role="note"
+  aria-label="{{ $title }}: {{ $label }}">
+  <span class="authorship-badge__icon" aria-hidden="true">
+    {{- if eq $icon "sparkles" -}}
+      ✦
+    {{- else if eq $icon "pen" -}}
+      ✎
+    {{- else if eq $icon "shield-check" -}}
+      ✓
+    {{- else if eq $icon "brain" -}}
+      ◌
+    {{- else if eq $icon "none" -}}
+      
+    {{- else -}}
+      {{ $icon }}
+    {{- end -}}
+  </span>
+  <span class="authorship-badge__text">{{ $label }}</span>
+</span>

@@ -15,6 +15,8 @@ source = "Quora"
 sourceUrl = "https://www.quora.com/unanswered/Is-backing-up-to-multiple-drives-safer-than-cloud-storage"
 +++
 
+> {{< authorship-badge label="Human-authored analysis; AI used for formatting and proofreading" tone="mixed" icon="shield-check" >}}
+
 ![Physical backup vs. cloud backup](featured-og.webp) 
 
 >[!NOTE]

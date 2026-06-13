@@ -20,6 +20,8 @@ showSummary = true
 sharingLinks = ["email","reddit","telegram","twitter","linkedin"]
 +++
 
+> {{< authorship-badge label="Human-authored analysis; AI used for formatting and proofreading" tone="mixed" icon="shield-check" >}}
+
 ![OWASP's Duty to Human Rights](featured-og.webp)
 
 ## AI's Rapid Growth and Lack of Regulation

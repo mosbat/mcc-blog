@@ -22,6 +22,8 @@ sourceUrl = "https://www.quora.com/How-does-zero-trust-cloud-security-work"
 source = "Quora"
 +++
 
+> {{< authorship-badge label="Human-authored analysis; AI used for formatting and proofreading" tone="mixed" icon="shield-check" >}}
+
 ![Zero Trust](featured-og.webp) 
 
 >[!NOTE]

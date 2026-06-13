@@ -14,6 +14,8 @@ sourceUrl = "https://www.quora.com/How-do-you-protect-the-privacy-security-in-th
 source = "Quora"
 +++
 
+> {{< authorship-badge label="Human-authored analysis; AI used for formatting and proofreading" tone="mixed" icon="shield-check" >}}
+
 >[!NOTE]
 > {{< source-url >}}
 

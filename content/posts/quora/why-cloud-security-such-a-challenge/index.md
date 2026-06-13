@@ -14,6 +14,8 @@ sourceUrl = "https://www.quora.com/Why-is-cloud-security-such-a-big-challenge"
 source = "Quora"
 +++
 
+> {{< authorship-badge label="Human-authored analysis; AI used for formatting and proofreading" tone="mixed" icon="shield-check" >}}
+
 ![Top 10 OWASP'S Cloud Security](featured-og.webp)
 
 >[!NOTE]

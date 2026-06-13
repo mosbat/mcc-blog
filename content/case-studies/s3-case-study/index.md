@@ -23,6 +23,8 @@ showSummary = true
 sharingLinks = ["email","reddit","telegram","twitter","linkedin"]
 +++
 
+> {{< authorship-badge label="Human-authored analysis; AI used for formatting and proofreading" tone="mixed" icon="shield-check" >}}
+
 > [!NOTE]Disclaimer:
 >This is a hypothetical case scenario based on common AWS environments, past incidents and not about a particular company.
 

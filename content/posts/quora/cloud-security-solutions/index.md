@@ -14,6 +14,8 @@ sourceUrl = "https://www.quora.com/What-are-the-best-cloud-security-solutions-fo
 source = "Quora"
 +++
 
+> {{< authorship-badge label="Human-authored analysis; AI used for formatting and proofreading" tone="mixed" icon="shield-check" >}}
+
 ![Cloud Security](featured-og.webp)
 
 >[!NOTE]

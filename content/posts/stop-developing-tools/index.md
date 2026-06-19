@@ -11,6 +11,7 @@ tags = ["Security Governance", "Cloud Security", "AWS Security", "AI Security", 
 categories = ["Cloud Security", "Security Governance", "AI Security & Governance"]
 sharingLinks = ["email", "reddit", "telegram", "twitter", "linkedin"]
 showTableOfContents = true
+lastMod = 2026-06-19T08:00:00+02:00
 +++
 
 > {{< authorship-badge label="Human-authored analysis; AI used for formatting and proofreading" tone="mixed" icon="shield-check" >}}
@@ -44,7 +45,7 @@ With AI, generating code or automating certain tasks became so easy that the bar
 > "I have engineers within Anthropic who say I don't write any code anymore. I just let the model write the code, I edit it."
 > — Dario Amodei, World Economic Forum in Davos, January 2026
 
-It is naive to think that a trillion+ US dollars industry will disappear overnight or that they will face an obstacle and give up. Those are companies with massive investments so failure is not in their dictionary. 
+It is naive to think that an industry projected to reach USD 1 trillion dollars by 2027 will disappear overnight or that they will face an obstacle and give up. Those are companies with massive investments so failure is not in their dictionary. As of today, the AI market have reached USD 617.62bn (according to [Statista](https://www.statista.com/outlook/tmo/artificial-intelligence/worldwide/#market-size)).
 
 The above doesn't only apply to Software Engineering but also to Cybersecurity as well.
 

@@ -84,6 +84,11 @@ pageRef = "case-studies"
 weight = 30
 
 [[main]]
+name = "Live Demos"
+url = "https://architecture.mousa-cloud.com"
+weight = 33
+
+[[main]]
 name = "Company Site"
 url = "https://www.mousa-cloud.com"
 weight = 35
@@ -112,6 +117,11 @@ weight = 20
 name = "Case Studies"
 pageRef = "case-studies"
 weight = 30
+
+[[footer]]
+name = "Live Demos"
+url = "https://architecture.mousa-cloud.com"
+weight = 33
 
 [[footer]]
 name = "Company Site"
